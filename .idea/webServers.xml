@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="5867a637-7e4c-4f60-bdc1-f2b315af7396" name="Sebern" url="http://hosting105352.a2fa5.netcup.net">
+        <fileTransfer host="hosting105352.a2fa5.netcup.net" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

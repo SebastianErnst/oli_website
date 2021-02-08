@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font: {
+        size: 106.25%;
+        family: $fontFamilyText;
+    }
+    color: $fontLight;
+    line-height: 1.4;
+}
+
+.keymessage {
+    .section-green & {
+        color: $fontLight;
+    }
+    max-width: 75%;
+    margin: {
+        top: 0;
+        bottom: $spaceSmall;
+    }
+    color: $turquoiseDark;
+    font: {
+        size: $fontSizeXLarge;
+        weight: 1000;
+        family: $fontFamilyIntros;
+    }
+}
+
+.intro {
+    margin: 0;
+}
+
+section {
+    color: $fontDark;
+    background: $bgColorLight;
+    padding-bottom: $spaceNormal;
+    @include breakpoint(medium) {
+        padding-bottom: $spaceLarge;
+    }
+    @include breakpoint(large) {
+        padding-bottom: $spaceLarge*1.5;
+    }
+    &.section-green {
+        background: $turquoiseDark;
+        color: $fontLight;
+    }
+    &.section-dark {
+        background: $bgColorDark;
+    }
+    &:last-child {
+        padding-bottom: 0;
+    }
+    &.additional-content {
+        padding-bottom: $spaceNormal;
+        padding-top: $spaceNormal;
+        @include breakpoint(medium) {
+            padding-bottom: $spaceLarge;
+            padding-top: $spaceLarge;
+        }
+        @include breakpoint(large) {
+            padding-bottom: $spaceLarge;
+            padding-top: $spaceLarge;
+        }
+    }
+}
+
+.main-wrapper {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.inner-wrapper {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 $spaceXSmall;
+    @include breakpoint(medium) {
+        padding: 0 $spaceSmall;
+    }
+    @include breakpoint(large) {
+        padding: 0 $spaceNormal;
+    }
+}
+
+blockquote {
+    margin: {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    font: {
+        style: italic;
+        size: $fontSizeLarge;
+    }
+    &::before,
+    &::after {
+        line-height: 1;
+        font-size: $fontSizeLarge;
+        color: $turquoiseDark;
+    }
+    &::after {
+        content: "\"";
+    }
+    &::before {
+        content: "\"";
+    }
+}
+
+strong {
+    font-weight: 900;
+}

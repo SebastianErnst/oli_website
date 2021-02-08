@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+.pillars-section {
+    .pillars {
+        margin-bottom: rem-calc(20 + $spaceNormal);
+    }
+    .pillars-list {
+        @include reset-list;
+        display: flex;
+        flex: {
+            wrap: wrap;
+        }
+        margin: rem-calc(-10);
+        .pillars-list-item {
+            width: 25%;
+            padding: rem-calc(10);
+        }
+    }
+    .pillar {
+        @include box-shadow();
+        overflow: hidden;
+        border-radius: $global-radius;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        background: $turquoiseDark;
+        .image {
+            @include absolute-stretch();
+            height: 100%;
+            width: auto;
+            background: {
+                size: cover;
+                position: 50% 50%;
+            }
+            filter: grayscale(100%);
+            mix-blend-mode: multiply;
+        }
+        .info-box {
+            position: relative;
+            padding: $spaceSmall;
+            .icon {
+                @include icon();
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+                margin: {
+                    bottom: $spaceSmall;
+                }
+            }
+            .h2 {
+                text-align: center;
+                color: $yellow;
+            }
+            .text {
+                font-size: $fontSizeNormal;
+                color: rgba($fontLight, 0.95);
+                text-shadow: 2px 2px 1px rgba(black, 1);
+            }
+        }
+    }
+}

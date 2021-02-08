@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+.button,
+button {
+    @include reset-button;
+    display: inline-block;
+    color: $fontLight;
+    &:link,
+    &:visited,
+    &:active {
+        color: $fontLight;
+    }
+    border-radius: $global-radius;
+    font: {
+        family: $fontFamilyIntros;
+        weight: normal;
+        size: $fontSizeLarge;
+    }
+    padding: {
+        top: $spaceSmall;
+        right: $spaceNormal;
+        left: $spaceNormal;
+        bottom: $spaceSmall;
+    }
+    background: {
+        color: $turquoise;
+    }
+    overflow: hidden;
+    position: relative;
+    &.button-icon {
+        display: block;
+        position: relative;
+        padding: 0;
+        height: 65px;
+        width: 65px;
+        font: {
+            size: $fontSizeLarge;
+        }
+        .icon {
+            @include absolute-center();
+        }
+    }
+    span {
+        position: relative;
+        z-index: 2;
+        transition: color $anchorTransitionTimeAndEasingOut;
+    }
+    &::before {
+        @include absolute-stretch();
+        z-index: 1;
+        transform: translateX(-100%);
+        transition: transform $anchorTransitionTimeAndEasingOut;
+        display: block;
+        content: "";
+        background: {
+            color: $yellow;
+        }
+    }
+    &:hover {
+        &::before {
+            transition: transform $anchorTransitionTimeAndEasingIn;
+            transform: translateX(0);
+        }
+        span {
+            transition: color $anchorTransitionTimeAndEasingIn;
+            color: $turquoiseDark;
+        }
+    }
+    .section-green & {
+        background: {
+            color: $yellow;
+        }
+        &::before {
+            background: {
+                color: $turquoise;
+            }
+        }
+        &:hover {
+            span {
+                color: $fontLight;
+            }
+        }
+    }
+}

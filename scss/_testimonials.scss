@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+.testimonials-section {
+    .testimonials {
+        position: relative;
+    }
+    .swiper-slide {
+        height: auto;
+    }
+    .testimonial {
+        border-radius: $global-radius;
+        height: 100%;
+        background: {
+            color: $beigeLight;
+        }
+        color: $fontDark;
+        padding: $spaceNormal;
+        display: flex;
+        flex: {
+            direction: column;
+        }
+        justify-content: space-between;
+        position: relative;
+        overflow: hidden;
+        .top-content {
+            margin: {
+                bottom: $spaceNormal;
+            }
+            .image {
+                background: {
+                    color: $turquoiseLight;
+                }
+                margin: {
+                    left: auto;
+                    right: auto;
+                    bottom: $spaceSmall;
+                }
+                position: relative;
+                overflow: hidden;
+                border: {
+                    radius: 50%;
+                    width: 1px;
+                    color: $turquoiseDark;
+                    style: solid;
+                }
+                height: 100px;
+                width: 100px;
+                .icon {
+                    @include absolute-center;
+                    color: $turquoiseDark;
+                }
+                img {
+                    position: relative;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .quote {
+                font: {
+                    size: $fontSizeNormal;
+                }
+                .text {
+                    display: inline;
+                    line-height: 1.6;
+                }
+            }
+        }
+        .bottom-content {
+            .name {
+                font: {
+                    size: $fontSizeLarge;
+                    weight: 700;
+                }
+                display: block;
+                color: $turquoiseDark;
+            }
+            .description {
+                font: {
+                    size: $fontSizeSmall;
+                }
+                display: block;
+                color: $turquoise;
+            }
+        }
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        color: $turquoiseLight;
+    }
+    .swiper-button-prev {
+        left: rem-calc(-40);
+    }
+    .swiper-button-next {
+        right: rem-calc(-40);
+    }
+    .swiper-pagination {
+        bottom: rem-calc(-40);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .swiper-pagination-bullet {
+        height: 15px;
+        width: 15px;
+        margin: {
+            right: 5px;
+        }
+        background: $turquoiseLight;
+        &:last-child {
+            margin-right: 0;
+        }
+        &.swiper-pagination-bullet-active {
+            background: $beige;
+        }
+    }
+}

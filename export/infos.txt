@@ -1,0 +1,63 @@
+Farben der Seite sollem Logo entsprechen 
+
+hauptseite:
+video
+säulen
+testimonials
+
+schrift minimalistisch modern 
+Code Demo
+Saveur Sans Round
+Cities Typeface
+Balibong
+
+style:
+bissi rund oder mit scharfen diagonalen
+
+Steckbrief:
+- liste der zertifikate
+- fließtext mit beschreibung
+
+---------------------------------------------------------
+---------------------------------------------------------
+
+Ideen:
+- referenzen 2-teilen in lange und kurze?
+
+
+Todo:
+Module:
+	Layout:
+	/- schrift zu eng
+	/- weißer text auf bunten hintergrund mit text shadow versehen
+	/- introtexte nicht so verloren wirken lassen
+
+	Testimonials:
+	/- referenzntext bisschen kleiner
+	/- testimonials aufklappbar, viel zu rieseig/breit, facebookrand der nächste teasert
+
+	Pillars:
+	/- Idee: Säulen statt Bilder Icons (angeschnitten bzw. nur einen Teil des Icons in groß zeigen)
+	/- säulen enger gestalktenh, ragen über rand wirkt nicht
+	
+	About:
+	/- über ex pain: text bissi aufhübschen mit modul, das abschnitte hervorhebt
+
+	Team:
+	- Das Team: Oli/Ute untereinander portraitbild mit text 
+
+	Header:
+	- impressionen/aschnitte im headervideo, sonst zu lang
+	/- mixblendmode mit filter grescale 100% für hero header
+	/- schnupper training cta page head senfgelb
+	
+	CTA-Section:
+	/- CTA-Modul am Ende jeder Seite
+
+Bugs:
+- letzter Testimonial slider kann man nich mit klick auf slideprev ändern -> klassen ändern sich nicht beim swipe auf letzten slide
+- routing mit parametern oder mehr als 3 sectionen geht nit
+
+
+Core für Mixins und so
+- cooles icon an ULs

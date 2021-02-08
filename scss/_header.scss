@@ -1,0 +1,25 @@
+.header {
+    .main-wrapper {
+        position: relative;
+        background-color: $turquoise;
+    }
+    .image {
+        @include aspect-ratio(4, 1);
+        filter: grayscale(100%);
+        mix-blend-mode: multiply;
+        background: {
+            size: cover;
+            repeat: no-repeat;
+            position: 50% 50%;
+        }
+    }
+    .inner-wrapper {
+        @include absolute-stretch();
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: $spaceNormal;
+    }
+    h1 {
+        position: absolute;
+    }
+}

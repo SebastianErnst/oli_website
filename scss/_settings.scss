@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+$z-index: (
+    background: 0,
+    particleJS: 1,
+    bottomShadow: 2,
+    content: 3
+);
+
+
+$turquoise: #1c6567;
+$turquoiseLight: #539394;
+$turquoiseDark: #003e41;
+
+$beige: #cfbda5;
+$beigeLight: #faf6f2;
+$beigeDark: #bfbcb8;
+
+$greyDark: #212121;
+
+$yellow: #ddaf1f;
+$bgColorDark: $beigeDark;
+$bgColorLight: $beigeLight;
+
+$fontFamilyIntros: 'Between', sans-serif;
+$fontFamilyHeading: 'Balibong', sans-serif;
+$fontFamilyText: 'Bitter', serif;
+
+//$fontSizeSmall: (14px, );
+
+$fontSizeSmall: 14px;
+$fontSizeNormal: 16px;
+$fontSizeLarge: 20px;
+$fontSizeXLarge: 30px;
+$fontSizeXXLarge: 40px;
+$fontSizeXXXLarge: 60px;
+
+$spaceXSmall: 12px;
+$spaceSmall: 25px;
+$spaceNormal: 50px;
+$spaceLarge: 75px;
+
+$fontDark: #000;
+$fontLight: #fff;
+
+$breakpoints: (
+    small: 0,
+    medium: 468px,
+    large: 769px
+);
+
+$global-radius: 5px;
+
+$anchorTransitionTimeAndEasingIn: 0.25s ease-out;
+$anchorTransitionTimeAndEasingOut: 0.15s ease-out;

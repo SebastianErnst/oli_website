@@ -1,0 +1,11 @@
+@charset "UTF-8";
+a,
+.anchor {
+    text-decoration: none;
+    color: $fontLight;
+    transition: $anchorTransitionTimeAndEasingOut;
+    &:hover {
+        transition: $anchorTransitionTimeAndEasingIn;
+        color: $turquoiseDark;
+    }
+}

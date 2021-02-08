@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+@function z-index($map, $key) {
+    @return map-get($map, $key);
+}
+
+@mixin anchor-hover() {
+    cursor: pointer;
+    transition: background-size $anchorTransitionTimeAndEasingOut;
+    background: linear-gradient(to bottom, $turquoise 0%, $turquoise 100%) repeat-x 0 100%;
+    background-size: 0px 1px;
+    &:hover {
+        transition: background-size $anchorTransitionTimeAndEasingIn, color $anchorTransitionTimeAndEasingIn;
+        @include anchor-hover-property;
+    }
+}
+
+@mixin anchor-hover-property() {
+    background-size: 2px 100%;
+    color: #fff;
+}
+
+@mixin clearfix() {
+    &::after {
+        content: ".";
+        clear: both;
+        display: block;
+        visibility: hidden;
+        height: 0px;
+    }
+}
+
+@mixin reset-button() {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    border-spacing: 0;
+    color: #26589F;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0;
+}
+
+@mixin reset-list() {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin aspect-ratio($width, $height) {
+    position: relative;
+    &:before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: ($height / $width) * 100%;
+    }
+    > .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+@mixin absolute-stretch() {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+@mixin box-shadow($type: dark) {
+    @if ($type == dark) {
+        box-shadow: 5px 5px 15px -3px $turquoiseDark;
+    }
+
+    @if ($type == light) {
+        box-shadow: 5px 5px 15px -3px $beige;
+    }
+}
+
+@mixin icon($size: normal) {
+    color: $fontLight;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: {
+        color: $turquoiseDark;
+    }
+    @if ($size == normal) {
+        font: {
+            size: $fontSizeXXLarge;
+        }
+        width: rem-calc(75);
+        height: rem-calc(75);
+    }
+    @if ($size == small) {
+        font: {
+            size: $fontSizeXLarge;
+        }
+        width: rem-calc(60);
+        height: rem-calc(60);
+    }
+    &.icon-video-camera {
+        &::before {
+            transform: translate(4%, -5%);
+        }
+    }
+    &.icon-library {
+        &::before {
+            transform: translate(0px, -7%);
+        }
+    }
+}

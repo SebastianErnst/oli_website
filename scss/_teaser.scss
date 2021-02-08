@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+.teaser-section {
+    .main-wrapper {
+
+    }
+    .background-image {
+        @include absolute-stretch();
+        background: {
+            position: 50% 50%;
+            size: cover;
+        }
+        filter: grayscale(100%);
+        mix-blend-mode: multiply;
+        top: -$spaceNormal;
+        bottom: -$spaceNormal;
+        @include breakpoint(medium) {
+            top: -$spaceLarge;
+            bottom: -$spaceLarge;
+        }
+        @include breakpoint(large) {
+            top: -$spaceLarge;
+            bottom: -$spaceLarge;
+        }
+    }
+    .keymessage,
+    .intro {
+        position: relative;
+        text-shadow: 2px 2px 1px rgba(black, 1);
+    }
+
+    .intro {
+        margin: {
+            bottom: $spaceLarge;
+        }
+    }
+}

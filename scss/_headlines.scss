@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+h1,
+h2 {
+    margin: {
+        top: 0;
+        bottom: $spaceXSmall;
+    }
+}
+
+.h1,
+h1 {
+    position: relative;
+    line-height: 1;
+    display: block;
+    color: $yellow;
+    font: {
+        family: $fontFamilyHeading;
+        weight: 700;
+        size: $fontSizeXXXLarge;
+    }
+}
+
+
+.h2,
+h2 {
+    //.section-dark & {
+    //    color: $fontLight;
+    //}
+    position: relative;
+    line-height: 1;
+    display: block;
+    color: $turquoiseLight;
+    font: {
+        family: $fontFamilyHeading;
+        weight: 700;
+        size: $fontSizeXXLarge;
+    }
+}
+
+h3 {
+    margin: {
+        top: 0;
+        bottom: $spaceXSmall;
+    }
+    line-height: 1;
+    display: inline-block;
+    color: $fontLight;
+    font: {
+        family: $fontFamilyHeading;
+        weight: 500;
+        size: $fontSizeXLarge;
+    }
+}

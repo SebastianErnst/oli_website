@@ -4,29 +4,12 @@ h1,
 h2 {
     margin: {
         top: 0;
-        bottom: $spaceXSmall;
+        bottom: $spaceSmall;
     }
 }
 
-.h1,
-h1 {
-    position: relative;
-    line-height: 1;
-    display: block;
-    color: $yellow;
-    font: {
-        family: $fontFamilyHeading;
-        weight: 700;
-        size: $fontSizeXXXLarge;
-    }
-}
-
-
-.h2,
 h2 {
-    //.section-dark & {
-    //    color: $fontLight;
-    //}
+    text-align: center;
     position: relative;
     line-height: 1;
     display: block;

@@ -8,32 +8,22 @@ $z-index: (
 );
 
 
-$turquoise: #1c6567;
-$turquoiseLight: #539394;
-$turquoiseDark: #003e41;
+$turquoise: #4d7f7d;
+$turquoiseLight: #7baeac;
+$turquoiseDark: #1f5251;
 
-$beige: #cfbda5;
-$beigeLight: #faf6f2;
-$beigeDark: #bfbcb8;
+$orange: #FF8F00;
+$bgColorDark: #212022;
+$bgColorLight: #e9e2dd;
 
-$greyDark: #212121;
-
-$yellow: #ddaf1f;
-$bgColorDark: $beigeDark;
-$bgColorLight: $beigeLight;
-
-$fontFamilyIntros: 'Between', sans-serif;
 $fontFamilyHeading: 'Balibong', sans-serif;
-$fontFamilyText: 'Bitter', serif;
-
-//$fontSizeSmall: (14px, );
+$fontFamilyText: 'Between', sans-serif;
 
 $fontSizeSmall: 14px;
 $fontSizeNormal: 16px;
 $fontSizeLarge: 20px;
 $fontSizeXLarge: 30px;
 $fontSizeXXLarge: 40px;
-$fontSizeXXXLarge: 60px;
 
 $spaceXSmall: 12px;
 $spaceSmall: 25px;
@@ -49,7 +39,5 @@ $breakpoints: (
     large: 769px
 );
 
-$global-radius: 5px;
-
-$anchorTransitionTimeAndEasingIn: 0.25s ease-out;
-$anchorTransitionTimeAndEasingOut: 0.15s ease-out;
+$anchorTransitionTimeAndEasingIn: 0.4s ease-out;
+$anchorTransitionTimeAndEasingOut: 0.2s ease-out;

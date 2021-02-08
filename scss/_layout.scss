@@ -15,32 +15,9 @@ html {
         family: $fontFamilyText;
     }
     color: $fontLight;
-    line-height: 1.4;
-}
-
-.keymessage {
-    .section-green & {
-        color: $fontLight;
-    }
-    max-width: 75%;
-    margin: {
-        top: 0;
-        bottom: $spaceSmall;
-    }
-    color: $turquoiseDark;
-    font: {
-        size: $fontSizeXLarge;
-        weight: 1000;
-        family: $fontFamilyIntros;
-    }
-}
-
-.intro {
-    margin: 0;
 }
 
 section {
-    color: $fontDark;
     background: $bgColorLight;
     padding-bottom: $spaceNormal;
     @include breakpoint(medium) {
@@ -48,10 +25,6 @@ section {
     }
     @include breakpoint(large) {
         padding-bottom: $spaceLarge*1.5;
-    }
-    &.section-green {
-        background: $turquoiseDark;
-        color: $fontLight;
     }
     &.section-dark {
         background: $bgColorDark;
@@ -106,7 +79,6 @@ blockquote {
     }
     &::before,
     &::after {
-        line-height: 1;
         font-size: $fontSizeLarge;
         color: $turquoiseDark;
     }

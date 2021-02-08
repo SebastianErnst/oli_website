@@ -15,17 +15,35 @@
     ul {
         @include reset-list;
         display: flex;
-        align-items: center;
         justify-content: flex-end;
         li {
-            margin: {
-                right: $spaceSmall;
-            }
-            &:last-child {
-                margin: {
-                    right: 0;
+            padding: $spaceSmall;
+            .login-button {
+                color: $fontLight !important;
+                //position: absolute;
+                //top: $spaceNormal;
+                //right: $spaceNormal;
+                z-index: 11111;
+                height: 85px;
+                width: 85px;
+                background: $turquoiseDark;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                transition: background 150ms ease-out;
+                &:hover {
+                    background: $turquoise;
                 }
+
+                .icon {
+                    font-size: $fontSizeXLarge;
+                }
+            }
+            a {
+                color: #fff !important;
             }
         }
     }
+
 }

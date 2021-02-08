@@ -1,25 +1,161 @@
-.header {
-    .main-wrapper {
-        position: relative;
-        background-color: $turquoise;
-    }
-    .image {
-        @include aspect-ratio(4, 1);
-        filter: grayscale(100%);
-        mix-blend-mode: multiply;
-        background: {
-            size: cover;
-            repeat: no-repeat;
-            position: 50% 50%;
+@charset "UTF-8";
+
+header {
+    overflow: hidden;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    #fitogram-booking-tool {
+        width: 50%;
+        .filters-container_26FPP.vertical_3xN6G {
+            display: none;
         }
     }
-    .inner-wrapper {
-        @include absolute-stretch();
-        display: flex;
-        align-items: flex-end;
-        padding-bottom: $spaceNormal;
+    .video-wrapper {
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        .cta-termine {
+            display: block;
+            position: absolute;
+            left: 50%;
+            bottom: 150px;
+            transform: translateX(-50%);
+            background: $turquoiseDark;
+            padding: $spaceXSmall $spaceNormal;
+        }
+        video {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+        .video-trigger {
+            z-index: 11111;
+            @include absolute-center;
+            height: 150px;
+            width: 150px;
+            border: {
+                width: 1px;
+                style: solid;
+                color: $turquoiseDark;
+                radius: 50%;
+            }
+            background-color: $turquoiseDark;
+            transition: background-color 150ms ease-out;
+            &:hover {
+                background-color: #fff;
+                .arrow {
+                    border-left: 45px solid $turquoiseDark;
+                }
+            }
+            .arrow {
+                @include absolute-center;
+                left: 53%;
+                width: 0;
+                height: 0;
+                border-top: 30px solid transparent;
+                border-bottom: 30px solid transparent;
+                border-left: 45px solid #fff;
+                transition: border-left-color 150ms ease-out;
+            }
+        }
     }
-    h1 {
+
+    .main-menu-wrapper {
         position: absolute;
+        top: $spaceNormal;
+        left: $spaceNormal;
+        z-index: 11111;
+        .main-menu-trigger {
+            height: 85px;
+            width: 85px;
+            z-index: 1111;
+            background: $turquoiseDark;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: background 150ms ease-out;
+            &:hover {
+                background: $turquoise;
+            }
+
+            .line {
+                width: 2.5rem;
+                height: .3125rem;
+                background: #fff;
+                transition: 0.5s;
+                border-radius: 2.5rem;
+                margin-bottom: .52em;
+                opacity: 1;
+                transition: all 0.3s ease;
+            }
+
+            .line:last-child {
+                margin-bottom: 0;
+            }
+
+            /* Top line */
+            .active .line:first-child {
+                -webkit-transform: rotate(45deg);
+                -webkit-transform-origin: 3px 11px;
+                transform: rotate(45deg);
+                transform-origin: 3px 11px;
+            }
+
+            /* Second line */
+            .active .line:nth-child(2) {
+                opacity: 0;
+            }
+
+            /* Bottom line */
+            .active .line:last-child {
+                -webkit-transform: rotate(-45deg);
+                -webkit-transform-origin: 5px -3px;
+                transform: rotate(-45deg);
+                transform-origin: 5px -3px;
+            }
+        }
+        .main-menu-list {
+            @include reset-list;
+            width: 250px;
+            background: $turquoiseDark;
+            max-height: 0;
+            overflow: hidden;
+            &.active {
+                transition: max-height 250ms ease-out;
+                max-height: 500px;
+            }
+            li {
+                cursor: pointer;
+                padding: $spaceSmall;
+                border-bottom: 1px solid $turquoiseLight;
+                transition: background 150ms ease-out;
+
+                &.active {
+                    background: $turquoise;
+                }
+
+                &:hover {
+                    background: #fff;
+
+                    a {
+                        color: $fontDark;
+                    }
+                }
+
+                a {
+                    transition: color 150ms ease-out;
+                    color: $fontLight;
+                }
+
+            }
+        }
     }
+
 }

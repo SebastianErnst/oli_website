@@ -1,6 +1,13 @@
 @charset "UTF-8";
 
 .testimonials-section {
+    .intro {
+        color: $fontLight;
+        margin-bottom: $spaceNormal;
+    }
+    background: {
+        color: $turquoiseDark;
+    }
     .testimonials {
         position: relative;
     }
@@ -11,7 +18,7 @@
         border-radius: $global-radius;
         height: 100%;
         background: {
-            color: $beigeLight;
+            color: #fff;
         }
         color: $fontDark;
         padding: $spaceNormal;
@@ -20,8 +27,6 @@
             direction: column;
         }
         justify-content: space-between;
-        position: relative;
-        overflow: hidden;
         .top-content {
             margin: {
                 bottom: $spaceNormal;
@@ -55,21 +60,11 @@
                     height: auto;
                 }
             }
-            .quote {
-                font: {
-                    size: $fontSizeNormal;
-                }
-                .text {
-                    display: inline;
-                    line-height: 1.6;
-                }
-            }
         }
         .bottom-content {
             .name {
                 font: {
                     size: $fontSizeLarge;
-                    weight: 700;
                 }
                 display: block;
                 color: $turquoiseDark;
@@ -109,7 +104,7 @@
             margin-right: 0;
         }
         &.swiper-pagination-bullet-active {
-            background: $beige;
+            background: #fff;
         }
     }
 }

@@ -1,8 +1,9 @@
 @charset "UTF-8";
 
 .pillars-section {
-    .pillars {
-        margin-bottom: rem-calc(20 + $spaceNormal);
+    .intro {
+        color: $fontDark;
+        margin-bottom: $spaceNormal;
     }
     .pillars-list {
         @include reset-list;
@@ -17,44 +18,31 @@
         }
     }
     .pillar {
-        @include box-shadow();
-        overflow: hidden;
-        border-radius: $global-radius;
         position: relative;
         height: 100%;
         width: 100%;
-        background: $turquoiseDark;
         .image {
-            @include absolute-stretch();
-            height: 100%;
-            width: auto;
+            @include aspect-ratio(9, 16);
             background: {
                 size: cover;
-                position: 50% 50%;
             }
-            filter: grayscale(100%);
-            mix-blend-mode: multiply;
         }
         .info-box {
             position: relative;
+            background: linear-gradient(135deg, $turquoiseDark 0%, $turquoiseLight 100%);;
             padding: $spaceSmall;
+            text-align: center;
             .icon {
-                @include icon();
-                position: relative;
-                left: 50%;
-                transform: translateX(-50%);
-                margin: {
-                    bottom: $spaceSmall;
+                font: {
+                    size: $fontSizeXXLarge;
                 }
+                padding: $spaceSmall;
             }
-            .h2 {
-                text-align: center;
-                color: $yellow;
+            .header-h2 {
+                color: $fontLight;
             }
             .text {
-                font-size: $fontSizeNormal;
-                color: rgba($fontLight, 0.95);
-                text-shadow: 2px 2px 1px rgba(black, 1);
+
             }
         }
     }

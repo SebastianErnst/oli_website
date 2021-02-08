@@ -1,11 +1,13 @@
 @charset "UTF-8";
 a,
 .anchor {
+    //@include anchor-hover();
+    //cursor: pointer;
+    //padding: {
+    //    left: 5px;
+    //    right: 5px;
+    //    bottom: 5px;
+    //}
+    //color: $fontDark;
     text-decoration: none;
-    color: $fontLight;
-    transition: $anchorTransitionTimeAndEasingOut;
-    &:hover {
-        transition: $anchorTransitionTimeAndEasingIn;
-        color: $turquoiseDark;
-    }
 }

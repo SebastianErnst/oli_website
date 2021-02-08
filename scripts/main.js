@@ -22,38 +22,20 @@ class MainApplication {
         });
 
         $('[data-swiper-container]').each((index, element) => {
-            let $parent = $(element).parent();
-            const testimonilSLider = new Swiper(element, {
-                speed: 500,
-                slidesPerView: 1.3,
+            new Swiper(element, {
+                slidesPerView: 3,
                 spaceBetween: 25,
                 pagination: {
-                    el: $parent.find('.swiper-pagination'),
+                    el: $(element).parent().find('.swiper-pagination'),
                     type: 'bullets',
                 },
                 navigation: {
-                    nextEl: $parent.find('.swiper-button-next'),
-                    prevEl: $parent.find('.swiper-button-prev')
+                    nextEl: $(element).parent().find('.swiper-button-next'),
+                    prevEl: $(element).parent().find('.swiper-button-prev')
+                },
+                autoplay: {
+                    delay: 5000,
                 }
-                // loop: true
-                // autoplay: {
-                //     delay: 5000,
-                // }
-            });
-
-            $parent.find('.swiper-slide-next').on('click', () => {
-                testimonilSLider.slideNext();
-            });
-
-            testimonilSLider.on('slideChangeTransitionEnd', () => {
-                $parent.find('.swiper-slide').off();
-                $parent.find('.swiper-slide-next').on('click', () => {
-                    testimonilSLider.slideNext();
-                });
-
-                $parent.find('.swiper-slide-prev').on('click', () => {
-                    testimonilSLider.slidePrev();
-                });
             });
         });
     }

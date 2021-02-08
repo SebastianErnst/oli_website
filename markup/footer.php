@@ -8,7 +8,7 @@
                 <ul class="social-media-list">
                     <li>
                         <a target="_blank"
-                           href="">
+                           href="https://www.facebook.com/Michael-Seifert-Music-Sound-Design-104228377983329">
                             <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f"
                                  class="svg-inline--fa fa-facebook-f fa-w-10" role="img"
                                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
@@ -18,7 +18,7 @@
                         </a>
                     </li>
                     <li>
-                        <a target="_blank" href="">
+                        <a target="_blank" href="https://www.instagram.com/micha_und_die_kleinen_kollegen/">
                             <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram"
                                  class="svg-inline--fa fa-instagram fa-w-14" role="img"
                                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">

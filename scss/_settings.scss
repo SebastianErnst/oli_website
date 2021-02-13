@@ -8,32 +8,30 @@ $z-index: (
 );
 
 
-$turquoise: #1c6567;
-$turquoiseLight: #539394;
-$turquoiseDark: #003e41;
+$turquoise: #4d7f7d;
+$turquoiseLight: #7baeac;
+$turquoiseDark: #1f5251;
 
 $beige: #cfbda5;
 $beigeLight: #faf6f2;
-$beigeDark: #bfbcb8;
+$beigeLightDark: #e9e6e2;
 
 $greyDark: #212121;
 
 $yellow: #ddaf1f;
-$bgColorDark: $beigeDark;
+$bgColorDark: $beigeLightDark;
 $bgColorLight: $beigeLight;
 
 $fontFamilyIntros: 'Tahoma', sans-serif;
 $fontFamilyHeading: 'Tahoma', sans-serif;
 $fontFamilyText: 'Tahoma', sans-serif;
 
-//$fontSizeSmall: (14px, );
-
-$fontSizeSmall: 14px;
 $fontSizeNormal: 16px;
 $fontSizeLarge: 20px;
 $fontSizeXLarge: 30px;
-$fontSizeXXLarge: 40px;
-$fontSizeXXXLarge: 60px;
+
+$iconSizeNormal: 40px;
+$iconSizeLarge: 60px;
 
 $spaceXSmall: 12px;
 $spaceSmall: 25px;

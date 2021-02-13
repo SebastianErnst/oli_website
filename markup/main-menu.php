@@ -7,8 +7,14 @@
                 <li class="active"><a href="./das-team">Das Team</a></li>
                 <li class="active"><a href="./kontakt">Kontakt</a></li>
                 <li>
-                    <a href="https://app.fitogram.pro/signin" target="_blank" class="button button-icon">
+                    <a href="./kontakt" class="button secondary thin">
+                        <span> Probetraining</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://app.fitogram.pro/signin" target="_blank" class="button thin">
                         <span class="icon icon-user-check"></span>
+                        <span>Login</span>
                     </a>
                 </li>
             </ul>

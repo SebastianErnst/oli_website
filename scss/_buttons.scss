@@ -3,7 +3,8 @@
 .button,
 button {
     @include reset-button;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     color: $fontLight;
     &:link,
     &:visited,
@@ -27,23 +28,23 @@ button {
     }
     overflow: hidden;
     position: relative;
-    &.button-icon {
-        display: block;
-        position: relative;
-        padding: 0;
-        height: 65px;
-        width: 65px;
-        font: {
-            size: $fontSizeLarge;
-        }
-        .icon {
-            @include absolute-center();
+    &.thin {
+        padding: {
+            top: $spaceXSmall;
+            right: $spaceSmall;
+            left: $spaceSmall;
+            bottom: $spaceXSmall;
         }
     }
     span {
         position: relative;
         z-index: 2;
         transition: color $anchorTransitionTimeAndEasingOut;
+    }
+    .icon {
+        margin: {
+            right: $spaceXSmall;
+        }
     }
     &::before {
         @include absolute-stretch();
@@ -66,7 +67,8 @@ button {
             color: $turquoiseDark;
         }
     }
-    .section-green & {
+    .section-green &,
+    &.secondary {
         background: {
             color: $yellow;
         }

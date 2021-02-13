@@ -1,4 +1,4 @@
-<header class="homepage-header section-green">
+<header class="homepage-header">
     <div class="main-wrapper">
 <!--        <div class="bg-image" style="background-image: url('./assets/homepage-header.jpg')"></div>-->
 <!--        <div class="image" style="background-image: url('./assets/OLI.png')"></div>-->
@@ -12,8 +12,5 @@
             </div>
 
         </div>
-        <a href="./kontakt" class="button">
-            <span> Probetraining</span>
-        </a>
     </div>
 </header>

@@ -31,28 +31,43 @@ Module:
 	/- schrift zu eng
 	/- weißer text auf bunten hintergrund mit text shadow versehen
 	/- introtexte nicht so verloren wirken lassen
+	- türkis wieder wie in erster version (vor dem 4.2)
+	- schriftart nur tahoma in verschiedenen größen
+	- section dark etwas heller und weicher
+	- max 3 schriftgrößen
 
 	Testimonials:
 	/- referenzntext bisschen kleiner
 	/- testimonials aufklappbar, viel zu rieseig/breit, facebookrand der nächste teasert
+	- testimonials wenn sehr kleine untereinander
+	/ - sterne an testimonials oebn in senfgelb / links vom bild
+	/- reihenfolge der testimonials wie im word dokument
+	/- statt kate katharina
 
 	Pillars:
 	/- Idee: Säulen statt Bilder Icons (angeschnitten bzw. nur einen Teil des Icons in groß zeigen)
 	/- säulen enger gestalktenh, ragen über rand wirkt nicht
+	- neue seite "Säulen" pro säu8le 1 section farblich unterschieden am ende den teaser, neue icons als hintergrundbild (nur zum test)
+	- homepgae säulen linken auf neue säulenseite
+	- säulen sollen neue, abgeschnittene icons haben (von oli bekommen), ohne bg image, alles tahoma (screenshot säulen)
 	
 	About:
 	/- über ex pain: text bissi aufhübschen mit modul, das abschnitte hervorhebt
+	- über firma neue icons an liste
 
 	Team:
 	- Das Team: Oli/Ute untereinander portraitbild mit text 
 
-	Header:
-	- impressionen/aschnitte im headervideo, sonst zu lang
+	Header:	
 	/- mixblendmode mit filter grescale 100% für hero header
 	/- schnupper training cta page head senfgelb
+	- header call to action ins main menü
 	
 	CTA-Section:
 	/- CTA-Modul am Ende jeder Seite
+
+	Main menu:
+	- login button text (vielleicht text mit icon)
 
 Bugs:
 - letzter Testimonial slider kann man nich mit klick auf slideprev ändern -> klassen ändern sich nicht beim swipe auf letzten slide
@@ -60,4 +75,23 @@ Bugs:
 
 
 Core für Mixins und so
-- cooles icon an ULs
+- cooles icon an ULS
+
+R 3.5
+
+i
+1 i < R -> full  
+2 i < R -> full
+3 i < R -> full
+4 i > R -> aber i - 0.5 == R -> Halber
+5 i > R -> und i - 0.5 > R -> keiner
+
+
+ 
+
+
+
+
+
+
+

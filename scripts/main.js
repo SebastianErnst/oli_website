@@ -10,7 +10,6 @@ class MainApplication {
         })
 
         $('.video-wrapper').on('click', () => {
-            console.log('a')
             let video = $('.video-wrapper').find('video')[0];
             if (video.paused === true) {
                 video.play();

@@ -26,14 +26,27 @@
             margin: {
                 bottom: $spaceNormal;
             }
+            .rating-image-wrapper {
+                display: flex;
+            }
+            .rating {
+                font: {
+                    size: $fontSizeXLarge;
+                }
+                color: $yellow;
+                width: 50%;
+                display: flex;
+                align-items: center;
+                margin: {
+                    bottom: $spaceSmall;
+                }
+            }
             .image {
                 background: {
                     color: $turquoiseLight;
                 }
                 margin: {
-                    left: auto;
-                    right: auto;
-                    bottom: $spaceSmall;
+                    bottom: $spaceXSmall;
                 }
                 position: relative;
                 overflow: hidden;
@@ -45,6 +58,7 @@
                 }
                 height: 100px;
                 width: 100px;
+                transform: translateX(-50%);
                 .icon {
                     @include absolute-center;
                     color: $turquoiseDark;

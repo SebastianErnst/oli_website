@@ -48,7 +48,7 @@ h1 {
   line-height: 1;
   display: block;
   color: #ddaf1f;
-  font-family: "Balibong", sans-serif;
+  font-family: "Tahoma", sans-serif;
   font-weight: 700;
   font-size: 60px;
 }
@@ -59,7 +59,7 @@ h2 {
   line-height: 1;
   display: block;
   color: #539394;
-  font-family: "Balibong", sans-serif;
+  font-family: "Tahoma", sans-serif;
   font-weight: 700;
   font-size: 40px;
 }
@@ -70,7 +70,7 @@ h3 {
   line-height: 1;
   display: inline-block;
   color: #fff;
-  font-family: "Balibong", sans-serif;
+  font-family: "Tahoma", sans-serif;
   font-weight: 500;
   font-size: 30px;
 }
@@ -86,7 +86,7 @@ html {
   padding: 0;
   position: relative;
   font-size: 106.25%;
-  font-family: "Bitter", serif;
+  font-family: "Tahoma", sans-serif;
   color: #fff;
   line-height: 1.4;
 }
@@ -98,7 +98,7 @@ html {
   color: #003e41;
   font-size: 30px;
   font-weight: 1000;
-  font-family: "Between", sans-serif;
+  font-family: "Tahoma", sans-serif;
 }
 .section-green .keymessage {
   color: #fff;
@@ -213,7 +213,7 @@ button {
   display: inline-block;
   color: #fff;
   border-radius: 5px;
-  font-family: "Between", sans-serif;
+  font-family: "Tahoma", sans-serif;
   font-weight: normal;
   font-size: 20px;
   padding-top: 25px;
@@ -335,9 +335,6 @@ a:hover,
   background-repeat: no-repeat;
 }
 .homepage-header .video-wrapper {
-  display: none;
-  filter: grayscale(100%);
-  mix-blend-mode: multiply;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
@@ -596,11 +593,20 @@ footer .footer .social-media-list li svg:hover {
 .testimonials-section .testimonial .top-content {
   margin-bottom: 50px;
 }
+.testimonials-section .testimonial .top-content .rating-image-wrapper {
+  display: flex;
+}
+.testimonials-section .testimonial .top-content .rating {
+  font-size: 30px;
+  color: #ddaf1f;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
 .testimonials-section .testimonial .top-content .image {
   background-color: #539394;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 25px;
+  margin-bottom: 12px;
   position: relative;
   overflow: hidden;
   border-radius: 50%;
@@ -609,6 +615,7 @@ footer .footer .social-media-list li svg:hover {
   border-style: solid;
   height: 100px;
   width: 100px;
+  transform: translateX(-50%);
 }
 .testimonials-section .testimonial .top-content .image .icon {
   position: absolute;

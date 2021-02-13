@@ -20,8 +20,8 @@ if (empty($pageName)) {
         case 'kontakt':
             getPage('kontakt', 'Kontakt');
             break;
-        case 'ueber-firma':
-            getPage('ueber-firma', 'Über Firma');
+        case 'firma':
+            getPage('firma', 'Firma');
             break;
         default:
             header('HTTP/1.1 404 Not Found');

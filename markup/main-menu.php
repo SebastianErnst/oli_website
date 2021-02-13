@@ -3,7 +3,7 @@
         <div class="inner-wrapper">
             <ul>
                 <li class="active"><a href="./">Home</a></li>
-                <li class="active"><a href="./ueber-firma">Über Firma</a></li>
+                <li class="active"><a href="./firma">Firma</a></li>
                 <li class="active"><a href="./das-team">Das Team</a></li>
                 <li class="active"><a href="./kontakt">Kontakt</a></li>
                 <li>

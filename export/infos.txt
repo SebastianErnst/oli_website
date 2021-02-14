@@ -73,7 +73,6 @@ Module:
 	- noch komplett leer
 
 Bugs:
-- letzter Testimonial slider kann man nich mit klick auf slideprev ändern -> klassen ändern sich nicht beim swipe auf letzten slide
 - routing mit parametern oder mehr als 3 sectionen geht nit
 
 

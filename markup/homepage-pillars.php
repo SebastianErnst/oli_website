@@ -40,7 +40,7 @@ Sportklamotten benötigst. Du kannst von überall teilnehmen, wo deine Internetv
 Ob Büro, Wohnzimmer oder Homeoffice. Bewege dich dort, wo es dir passt.
 EOF;
 
-$pillar1Image = PILLAR_IMG_2;
+$pillar1Image = PILLAR_IMG_1;
 
 
 // Pillar 2 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -153,7 +153,7 @@ $pillar4Image = PILLAR_IMG_4;
                 <li class="pillars-list-item">
                     <div class="pillar">
                         <span class="sub-heading"><?php echo $pillar1SubHeadline; ?></span>
-                        <div class="image" style="background-image: url(<?php echo PILLARS_MEDIA_PATH.$pillar1Image;?>)"></div>
+                        <div class="image" style="background-image: url(<?php echo $pillar1Image;?>)"></div>
                         <h3 class="h2"><?php echo $pillar1Headline; ?></h3>
                         <p class="text"><?php echo $pillar1Text; ?></p>
                     </div>
@@ -161,7 +161,7 @@ $pillar4Image = PILLAR_IMG_4;
                 <li class="pillars-list-item">
                     <div class="pillar">
                         <span class="sub-heading"><?php echo $pillar2SubHeadline; ?></span>
-                        <div class="image" style="background-image: url(<?php echo PILLARS_MEDIA_PATH.$pillar2Image;?>)"></div>
+                        <div class="image" style="background-image: url(<?php echo $pillar2Image;?>)"></div>
                         <h3 class="h2"><?php echo $pillar2Headline; ?></h3>
                         <p class="text"><?php echo $pillar2Text; ?></p>
                     </div>
@@ -169,7 +169,7 @@ $pillar4Image = PILLAR_IMG_4;
                 <li class="pillars-list-item">
                     <div class="pillar">
                         <span class="sub-heading"><?php echo $pillar3SubHeadline; ?></span>
-                        <div class="image" style="background-image: url(<?php echo PILLARS_MEDIA_PATH.$pillar3Image;?>)"></div>
+                        <div class="image" style="background-image: url(<?php echo $pillar3Image;?>)"></div>
                         <h3 class="h2"><?php echo $pillar3Headline; ?></h3>
                         <p class="text"><?php echo $pillar3Text; ?></p>
                     </div>
@@ -177,7 +177,7 @@ $pillar4Image = PILLAR_IMG_4;
                 <li class="pillars-list-item">
                     <div class="pillar">
                         <span class="sub-heading"><?php echo $pillar4SubHeadline; ?></span>
-                        <div class="image" style="background-image: url(<?php echo PILLARS_MEDIA_PATH.$pillar4Image;?>)"></div>
+                        <div class="image" style="background-image: url(<?php echo $pillar4Image;?>)"></div>
                         <h3 class="h2"><?php echo $pillar4Headline; ?></h3>
                         <p class="text"><?php echo $pillar4Text; ?></p>
                     </div>

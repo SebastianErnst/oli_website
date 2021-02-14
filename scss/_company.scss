@@ -20,6 +20,11 @@
                 min-width: 10%;
                 .icon {
                     @include icon(small);
+                    background: {
+                        size: 80% 80%;
+                        position: 50% 50%;
+                        repeat: no-repeat;
+                    }
                 }
             }
             .text-wrapper {

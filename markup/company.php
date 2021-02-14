@@ -27,7 +27,7 @@
         <ul class="text-icon-list">
             <li>
                 <div class="icon-wrapper">
-                    <div class="icon icon-video-camera"></div>
+                    <div class="icon" style="background-image: url('./assets/pillars/pillar-1.png')"></div>
                 </div>
                 <div class="text-wrapper">
                     <p>
@@ -42,7 +42,7 @@
             </li>
             <li>
                 <div class="icon-wrapper">
-                    <div class="icon icon-play"></div>
+                    <div class="icon" style="background-image: url('./assets/pillars/pillar-2.png')"></div>
                 </div>
                 <div class="text-wrapper">
                     <p>
@@ -54,7 +54,7 @@
             </li>
             <li>
                 <div class="icon-wrapper">
-                    <div class="icon icon-library"></div>
+                    <div class="icon" style="background-image: url('./assets/pillars/pillar-3.png')"></div>
                 </div>
                 <div class="text-wrapper">
                     <p>
@@ -67,7 +67,7 @@
             </li>
             <li>
                 <div class="icon-wrapper">
-                    <div class="icon icon-accessibility"></div>
+                    <div class="icon" style="background-image: url('./assets/pillars/pillar-4.png')"></div>
                 </div>
                 <div class="text-wrapper">
                     <p>

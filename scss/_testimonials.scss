@@ -6,6 +6,18 @@
     }
     .swiper-slide {
         height: auto;
+        width: 90%;
+        transition: opacity 0.5s;
+        &.three-quarter {
+            width: 70%;
+        }
+        &.half {
+            width: 50%;
+        }
+        &.swiper-slide-prev,
+        &.swiper-slide-next {
+            opacity: 0.45;
+        }
     }
     .testimonial {
         border-radius: $global-radius;
@@ -123,7 +135,7 @@
             margin-right: 0;
         }
         &.swiper-pagination-bullet-active {
-            background: $beige;
+            background: $turquoiseDark;
         }
     }
 }

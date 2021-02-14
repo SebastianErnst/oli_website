@@ -33,8 +33,5 @@ $socialShareImage = '';
     <script defer src="build/vendor.js" type="module"></script>
     <script defer src="build/main.js" type="module"></script>
     <link rel="stylesheet" type="text/css" href="./build/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>

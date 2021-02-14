@@ -3,9 +3,10 @@
         <div class="inner-wrapper">
             <ul>
                 <li class="active"><a href="./">Home</a></li>
-                <li class="active"><a href="./firma">Firma</a></li>
-                <li class="active"><a href="./das-team">Das Team</a></li>
-                <li class="active"><a href="./kontakt">Kontakt</a></li>
+                <li class=""><a href="./saeulen">Säulen</a></li>
+                <li class=""><a href="./firma">Firma</a></li>
+                <li class=""><a href="./das-team">Das Team</a></li>
+                <li class=""><a href="./kontakt">Kontakt</a></li>
                 <li>
                     <a href="./kontakt" class="button secondary thin">
                         <span> Probetraining</span>

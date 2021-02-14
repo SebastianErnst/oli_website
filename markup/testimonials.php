@@ -31,8 +31,16 @@ $description = 5;
                 <div class="swiper-container" data-swiper-container>
                     <div class="swiper-wrapper">
                         <?php for ($i = 1; $i < count($testimonials); $i++):?>
-                        <!-- Rating $testimonials[$i]2] -->
-                        <div class="swiper-slide">
+                        <?php
+                            $swipeLength = '';
+                            if (strlen($testimonials[$i][$text]) < 1000) {
+                                $swipeLength = ' three-quarter';
+                            }
+                            if (strlen($testimonials[$i][$text]) < 500) {
+                                $swipeLength = ' half';
+                            }
+                        ?>
+                        <div class="swiper-slide<?php echo $swipeLength; ?>">
                             <div class="testimonial">
                                 <div class="top-content">
                                     <div class="rating-image-wrapper">

@@ -41,22 +41,11 @@
         }
     }
     .video-wrapper {
-         //display: none;
-        //filter: grayscale(100%);
-        //mix-blend-mode: multiply;
         height: 100vh;
         width: 100vw;
         overflow: hidden;
         position: relative;
         cursor: pointer;
-        video {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            bottom: 0;
-            min-width: 100%;
-            min-height: 100%;
-        }
         .video-trigger {
             z-index: 11111;
             @include absolute-center;

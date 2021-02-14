@@ -24,11 +24,13 @@ class MainApplication {
             let $parent = $(element).parent();
             const testimonilSLider = new Swiper(element, {
                 speed: 500,
-                slidesPerView: 1.3,
+                slidesPerView: 'auto',
+                centeredSlides: true,
                 spaceBetween: 25,
                 pagination: {
                     el: $parent.find('.swiper-pagination'),
                     type: 'bullets',
+                    clickable: true
                 },
                 navigation: {
                     nextEl: $parent.find('.swiper-button-next'),

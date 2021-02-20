@@ -19,11 +19,14 @@ html {
 }
 
 .keymessage {
+    text-align: center;
     .section-green & {
         color: $fontLight;
     }
     max-width: 75%;
     margin: {
+        left: auto;
+        right: auto;
         top: 0;
         bottom: $spaceSmall;
     }
@@ -41,7 +44,7 @@ html {
 
 section {
     color: $fontDark;
-    background: $bgColorLight;
+    background: $bgcolor;
     padding-bottom: $spaceNormal;
     @include breakpoint(medium) {
         padding-bottom: $spaceLarge;
@@ -50,7 +53,7 @@ section {
         padding-bottom: $spaceLarge*1.5;
     }
     &.section-green {
-        background: $turquoiseDark;
+        background: $turquoise;
         color: $fontLight;
     }
     &.section-dark {
@@ -107,7 +110,10 @@ blockquote {
     &::before,
     &::after {
         line-height: 1;
-        font-size: $fontSizeLarge;
+        font: {
+            size: $fontSizeLarge;
+            weight: bold;
+        }
         color: $turquoiseDark;
     }
     &::after {

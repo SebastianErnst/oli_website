@@ -6,18 +6,22 @@
     <div class="main-wrapper">
         <div class="inner-wrapper">
             <p class="keymessage">
-                Ex-pain ist ein Trainings-System, das speziell dafür konzipiert ist, Rücken- oder Schulterschmerzen und
+                Ex-Pain ist ein Trainings-System, das speziell dafür konzipiert ist, Rücken- oder Schulterschmerzen und
                 Nackenverspannungen zu mildern.
             </p>
             <p class="intro">
                 Es ist besonders zu empfehlen für Menschen, die im Alltag sehr <strong>viel sitzen</strong>.
-                Die Methoden von ex-pain sollten nicht nur als Training angesehen werden, sondern als selbstverständlicher
+                Die Methoden von Ex-Pain sollten nicht nur als Training angesehen werden, sondern als selbstverständlicher
                 und notwendiger Begleiter im <strong>Alltag</strong>. Ein gesunder Rücken sollte Teil des Lifestyle sein.
                 So selbstverständlich wie Zähneputzen!
-                Mit ex-pain kannst du deine <strong>Schmerzen lindern</strong> oder der Entstehung neuer Probleme im Rücken vorbeugen.
-                Verschiedene Ansätze greifen ineinander, was ex-pain zu einem ganzheitlichen Trainingssystem macht, um dich
+                Mit Ex-Pain kannst du deine <strong>Schmerzen lindern</strong> oder der Entstehung neuer Probleme im Rücken vorbeugen.
+                Verschiedene Ansätze greifen ineinander, was Ex-Pain zu einem ganzheitlichen Trainingssystem macht, um dich
                 <strong>nachhaltig</strong> dabei zu unterstützen, deinen Alltag wieder unbeschwerter zu machen.
+                <br>
+                <br>
+                Diese Ansätze nennen wir die vier Säulen von Ex-Pain:
             </p>
+
         </div>
     </div>
 </section>

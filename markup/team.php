@@ -5,7 +5,7 @@
             <div class="team-member">
                 <img class="image" src="./assets/team/Oliver.jpg" alt="Oliver Kroiss">
                 <p class="text">
-                    Mein Name ist Oliver Kroiß. Ich bin Trainer, Gründer und euer Hauptansprechpartner von ex-pain.
+                    Mein Name ist Oliver Kroiß. Ich bin Trainer, Gründer und euer Hauptansprechpartner von Ex-Pain.
                     Neben meinem Studium der Sportwissenschaften habe ich in den letzten 7 Jahren Erfahrung als Trainer
                     in
                     verschiedenen Bereichen gesammelt. Abgesehen von der klassischen Trainertätigkeit in einem
@@ -61,7 +61,7 @@
                     Trainerin für Kommunikation, Teamentwicklung, einen guten Umgang mit Stress, etlichen Themen mehr -
                     und
                     außerdem Mensch!
-                    Bei ex-pain bin ich Trainerin für innere Stärke. Ich bin immer wieder fasziniert davon, wie sich
+                    Bei Ex-Pain bin ich Trainerin für innere Stärke. Ich bin immer wieder fasziniert davon, wie sich
                     unser
                     Muskel für innere Stärke trainieren lässt – und welche Auswirkungen das auf unser Leben hat!
                     Aus eigener Erfahrung weiß ich, dass es möglich ist, neue Lebensfreude zu bekommen, sich weiter zu

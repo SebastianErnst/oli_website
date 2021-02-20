@@ -4,7 +4,7 @@
             <ul>
                 <li class="active"><a href="./">Home</a></li>
                 <li class=""><a href="./saeulen">Säulen</a></li>
-                <li class=""><a href="./firma">Firma</a></li>
+                <li class=""><a href="./ueber-ex-pain">Über Ex-Pain</a></li>
                 <li class=""><a href="./das-team">Das Team</a></li>
                 <li class=""><a href="./kontakt">Kontakt</a></li>
                 <li>

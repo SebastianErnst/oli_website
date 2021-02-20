@@ -5,7 +5,7 @@ Säulen
 EOF;
 
 $introText = <<<EOF
-Ex-Pain ist unser Angebot (/ein Konzept) für ein schmerzfreieres Leben.
+Ex-Pain ist unser Konzept für ein schmerzfreieres Leben.
 Dabei greifen vier Schwerpunkte ineinander.
 EOF;
 
@@ -144,7 +144,7 @@ $pillar4Image = PILLAR_IMG_4;
 
 ?>
 
-<section id="saeulen" class="homepage-pillars-section additional-content">
+<section id="saeulen" class="homepage-pillars-section section-dark additional-content">
     <div class="inner-wrapper">
         <h2>Säulen</h2>
         <p class="keymessage"><?php echo $introText; ?></p>
@@ -184,7 +184,7 @@ $pillar4Image = PILLAR_IMG_4;
                 </li>
             </ul>
         </div>
-        <a href="./ueber-firma" class="button">
+        <a href="./saeulen" class="button">
             <span>
                 Mehr erfahren
             </span>

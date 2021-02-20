@@ -22,7 +22,7 @@ $description = 5;
 
 ?>
 
-<section id="about" class="testimonials-section additional-content section-dark">
+<section id="about" class="testimonials-section additional-content section-green">
     <div class="main-wrapper">
         <div class="inner-wrapper">
             <h2>Referenzen</h2>
@@ -66,9 +66,7 @@ $description = 5;
                                             <img src="<?php echo TESTIMONIAL_MEDIA_PATH.$testimonials[$i][$image]; ?>" alt="">
                                         </div>
                                     </div>
-                                    <blockquote class="quote">
-                                        <div class="text"><?php echo $testimonials[$i][$text]; ?></div>
-                                    </blockquote>
+                                    <blockquote class="quote"><div class="text"><?php echo $testimonials[$i][$text]; ?></div></blockquote>
                                 </div>
                                 <div class="bottom-content">
                                     <span class="name"><?php echo $testimonials[$i][$name]. ", ". $testimonials[$i][$age]; ; ?></span>

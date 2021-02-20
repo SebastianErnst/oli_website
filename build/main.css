@@ -58,10 +58,10 @@ h2 {
   position: relative;
   line-height: 1;
   display: block;
-  color: #7baeac;
+  color: #3c807c;
+  font-size: 30px;
+  font-weight: 1000;
   font-family: "Tahoma", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
 }
 
 h3 {
@@ -92,7 +92,10 @@ html {
 }
 
 .keymessage {
+  text-align: center;
   max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 0;
   margin-bottom: 25px;
   color: #1f5251;
@@ -124,11 +127,11 @@ section {
   }
 }
 section.section-green {
-  background: #1f5251;
+  background: #3c807c;
   color: #fff;
 }
 section.section-dark {
-  background: #e9e6e2;
+  background: #c5d5d5;
 }
 section:last-child {
   padding-bottom: 0;
@@ -185,6 +188,7 @@ blockquote {
 blockquote::before, blockquote::after {
   line-height: 1;
   font-size: 20px;
+  font-weight: bold;
   color: #1f5251;
 }
 blockquote::after {
@@ -225,7 +229,7 @@ button {
   padding-right: 50px;
   padding-left: 50px;
   padding-bottom: 25px;
-  background-color: #4d7f7d;
+  background-color: #3c807c;
   overflow: hidden;
   position: relative;
 }
@@ -284,7 +288,7 @@ button.secondary {
 .section-green .button::before, .button.secondary::before,
 .section-green button::before,
 button.secondary::before {
-  background-color: #4d7f7d;
+  background-color: #3c807c;
 }
 .section-green .button:hover span, .button.secondary:hover span,
 .section-green button:hover span,
@@ -309,7 +313,7 @@ a:hover,
   max-width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #7baeac;
+  background-color: #c5d5d5;
 }
 .homepage-header .button {
   z-index: 5;
@@ -420,6 +424,7 @@ a:hover,
   margin-bottom: 25px;
   margin-left: -75px;
   margin-right: -75px;
+  opacity: 0.85;
 }
 .homepage-pillars-section .pillar .image:before {
   display: block;
@@ -445,7 +450,7 @@ a:hover,
 
 .header .main-wrapper {
   position: relative;
-  background-color: #4d7f7d;
+  background-color: #3c807c;
 }
 .header .image {
   position: relative;
@@ -528,7 +533,7 @@ footer .footer .social-media-list li svg {
 }
 footer .footer .social-media-list li svg:hover {
   transition: color 0.25s ease-out;
-  color: #4d7f7d;
+  color: #3c807c;
 }
 
 .main-menu {
@@ -539,7 +544,7 @@ footer .footer .social-media-list li svg:hover {
   right: 0;
   width: 100%;
   height: 85px;
-  background-color: rgba(233, 230, 226, 0.4);
+  background-color: rgba(197, 213, 213, 0.4);
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -603,7 +608,7 @@ footer .footer .social-media-list li svg:hover {
   margin-bottom: 25px;
 }
 .testimonials-section .testimonial .top-content .image {
-  background-color: #7baeac;
+  background-color: #c5d5d5;
   margin-bottom: 12px;
   position: relative;
   overflow: hidden;
@@ -643,11 +648,11 @@ footer .footer .social-media-list li svg:hover {
 .testimonials-section .testimonial .bottom-content .description {
   font-size: 16px;
   display: block;
-  color: #4d7f7d;
+  color: #3c807c;
 }
 .testimonials-section .swiper-button-prev,
 .testimonials-section .swiper-button-next {
-  color: #7baeac;
+  color: #c5d5d5;
 }
 .testimonials-section .swiper-button-prev {
   left: -2.5rem;
@@ -664,7 +669,7 @@ footer .footer .social-media-list li svg:hover {
   height: 15px;
   width: 15px;
   margin-right: 5px;
-  background: #7baeac;
+  background: #c5d5d5;
 }
 .testimonials-section .swiper-pagination-bullet:last-child {
   margin-right: 0;
@@ -742,6 +747,7 @@ footer .footer .social-media-list li svg:hover {
   mix-blend-mode: multiply;
   top: -50px;
   bottom: -50px;
+  opacity: 0.85;
 }
 @media print, screen and (min-width: 29.25em) {
   .teaser-section .background-image {
@@ -758,7 +764,6 @@ footer .footer .social-media-list li svg:hover {
 .teaser-section .keymessage,
 .teaser-section .intro {
   position: relative;
-  text-shadow: 2px 2px 1px black;
 }
 .teaser-section .intro {
   margin-bottom: 75px;
@@ -768,11 +773,13 @@ footer .footer .social-media-list li svg:hover {
   overflow: hidden;
   left: 20%;
 }
-.pillar-section:nth-child(even) .image {
-  right: 0;
-}
 .pillar-section:nth-child(odd) .image {
+  mix-blend-mode: color-dodge;
   left: 0;
+}
+.pillar-section:nth-child(even) .image {
+  opacity: 0.45;
+  right: 0;
 }
 .pillar-section .main-wrapper {
   position: relative;
@@ -781,8 +788,9 @@ footer .footer .social-media-list li svg:hover {
   position: relative;
   z-index: 1;
   background-repeat: no-repeat;
+  background-size: contain;
   position: absolute;
-  width: 33%;
+  width: 20%;
   top: -50px;
 }
 .pillar-section .image:before {
@@ -805,12 +813,14 @@ footer .footer .social-media-list li svg:hover {
 }
 @media print, screen and (min-width: 48.0625em) {
   .pillar-section .image {
-    top: -112.5px;
+    top: -50px;
   }
 }
 .pillar-section .inner-wrapper {
   z-index: 2;
   position: relative;
+  padding-left: 12.5%;
+  padding-right: 12.5%;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,4 +1,4 @@
-<section id="about" class="additional-content section-green">
+<section id="about" class="additional-content">
     <div class="main-wrapper">
         <div class="inner-wrapper">
             <!-- Fitogram Booking Tool starts here -->

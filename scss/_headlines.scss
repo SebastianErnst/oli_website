@@ -24,17 +24,14 @@ h1 {
 
 .h2,
 h2 {
-    //.section-dark & {
-    //    color: $fontLight;
-    //}
     position: relative;
     line-height: 1;
     display: block;
-    color: $turquoiseLight;
+    color: $turquoise;
     font: {
-        family: $fontFamilyHeading;
-        weight: 700;
-        size: $fontSizeLarge;
+        size: $fontSizeXLarge;
+        weight: 1000;
+        family: $fontFamilyIntros;
     }
 }
 

@@ -8,19 +8,21 @@ $z-index: (
 );
 
 
-$turquoise: #4d7f7d;
-$turquoiseLight: #7baeac;
+    $turquoise: #3c807c;
 $turquoiseDark: #1f5251;
+$turquoiseLight: #c5d5d5;
 
-$beige: #cfbda5;
+$beige: $turquoise;
 $beigeLight: #faf6f2;
-$beigeLightDark: #e9e6e2;
+
+$beigeLightDark: #c5d5d5;
 
 $greyDark: #212121;
 
 $yellow: #ddaf1f;
-$bgColorDark: $beigeLightDark;
-$bgColorLight: $beigeLight;
+$bgcolor: $beigeLight;
+$bgColorDark: $turquoiseLight;
+$bgColorLight: $beigeLightDark;
 
 $fontFamilyIntros: 'Tahoma', sans-serif;
 $fontFamilyHeading: 'Tahoma', sans-serif;

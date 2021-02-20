@@ -25,8 +25,8 @@ if (empty($pageName)) {
         case 'kontakt':
             getPage('kontakt', 'Kontakt');
             break;
-        case 'firma':
-            getPage('firma', 'Firma');
+        case 'ueber-ex-pain':
+            getPage('ueber-ex-pain', 'Über Ex-Pain');
             break;
         case 'saeulen':
             getPage('saeulen', 'Säulen');

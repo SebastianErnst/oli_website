@@ -21,11 +21,6 @@ Steckbrief:
 ---------------------------------------------------------
 ---------------------------------------------------------
 
-Ideen:
-- referenzen 2-teilen in lange und kurze?
-
-
-Todo:
 Module:
 	Layout:
 	/- schrift zu eng
@@ -35,21 +30,27 @@ Module:
 	/- schriftart nur tahoma in verschiedenen größen
 	/- section dark etwas heller und weicher
 	/- max 3 schriftgrößen
+	- heading auf section green is weg
 
 	Testimonials:
 	/- referenzntext bisschen kleiner
 	/- testimonials aufklappbar, viel zu rieseig/breit, facebookrand der nächste teasert
-	!- Kachelbreite verringert je nach Textlänge --- testimonials wenn sehr kleine untereinander
+	/- Kachelbreite verringert je nach Textlänge --- testimonials wenn sehr kleine untereinander
 	/ - sterne an testimonials oebn in senfgelb / links vom bild
 	/- reihenfolge der testimonials wie im word dokument
-	/- statt kate katharina
-
+	/- statt kate katharina	
+	/- Referenz Bild von Martin 
+	/- Pärchen Referenz von Johanna und Olli
+	/- Referenz von Theresa 
+	
 	Pillars:
 	/- Idee: Säulen statt Bilder Icons (angeschnitten bzw. nur einen Teil des Icons in groß zeigen)
 	/- säulen enger gestalktenh, ragen über rand wirkt nicht
 	/ - neue seite "Säulen" pro säu8le 1 section farblich unterschieden am ende den teaser, neue icons als hintergrundbild (nur zum test)
 	/- homepgae säulen linken auf neue säulenseite
 	/- säulen sollen neue, abgeschnittene icons haben (von oli bekommen), ohne bg image, alles tahoma (screenshot säulen)
+	- homepage pillars headings alle auf gleicher ebene
+	- gekürzte Säulentexte mit Spiegelstrichen
 	
 	About:
 	/- über ex pain: text bissi aufhübschen mit modul, das abschnitte hervorhebt
@@ -57,32 +58,41 @@ Module:
 
 	Team:
 	/- Das Team: Oli/Ute untereinander portraitbild mit text 
+	- abgeänderter Vorstellungstexte
+
+	Teaser:
+	- Footer Bild. Das untere Drittel des Bildes wird verwendet
 
 	Header:	
 	/- mixblendmode mit filter grescale 100% für hero header
 	/- schnupper training cta page head senfgelb
 	/- header call to action ins main menü
+	- video nicht mittig und wirkt reingezoomt, bleibt immer 16:9 auf mobile wird der header einfach niedriger, Hintergrund Petrol	
+	- 2 Header Bilder (einmal mehr und einmal weniger stark bearbeitet. Geschmackssache, muss man dann mal sehen 
+
 	
 	CTA-Section:
 	/- CTA-Modul am Ende jeder Seite
 
 	Main menu:
 	/- login button text (vielleicht text mit icon)
+	- main menü weiter rechts raus
 
 	404-Seite:
 	- noch komplett leer
 
-Bugs:
-- routing mit parametern oder mehr als 3 sectionen geht nit
+	Brauchen wir noch:
+	- thumbnail für homepage header
+	- favicon
+	- logo
+	- Social share Infos: Bild, text 
+	- social media accounts für footer
+	- teaser section texte / bilder
 
+	Bugs:
+	- routing mit parametern oder mehr als 3 sectionen geht nit
 
-Core für Mixins und so
-- cooles icon an ULS
-
-
- 
-
-
+--------------------------------
 
 
 

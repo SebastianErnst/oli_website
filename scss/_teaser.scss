@@ -1,9 +1,6 @@
 @charset "UTF-8";
 
 .teaser-section {
-    .main-wrapper {
-
-    }
     .background-image {
         @include absolute-stretch();
         background: {
@@ -22,11 +19,12 @@
             top: -$spaceLarge;
             bottom: -$spaceLarge;
         }
+        opacity: 0.85;
     }
     .keymessage,
     .intro {
         position: relative;
-        text-shadow: 2px 2px 1px rgba(black, 1);
+        //text-shadow: 2px 2px 1px rgba(black, 1);
     }
 
     .intro {

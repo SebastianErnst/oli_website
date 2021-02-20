@@ -2,14 +2,18 @@
 .pillar-section {
     overflow: hidden;
     left: 20%;
-    &:nth-child(even) {
-        .image {
-            right: 0;
-        }
-    }
     &:nth-child(odd) {
         .image {
+            mix-blend-mode: color-dodge;
             left: 0;
+        }
+    }
+    &:nth-child(even) {
+        .inner-wrapper {
+        }
+        .image {
+            opacity: 0.45;
+            right: 0;
         }
     }
     .main-wrapper {
@@ -20,20 +24,25 @@
        z-index: 1;
        background: {
            repeat: no-repeat;
+           size: contain;
        }
        position: absolute;
-       width: 33%;
+       width: 20%;
        top: -$spaceNormal;
        @include breakpoint(medium) {
            top: -$spaceLarge;
        }
        @include breakpoint(large) {
-           top: -$spaceLarge*1.5;
+           top: -$spaceNormal;
        }
    }
     .inner-wrapper {
         z-index: 2;
         position: relative;
+        padding: {
+            left: 12.5%;
+            right: 12.5%;
+        }
     }
 }
 

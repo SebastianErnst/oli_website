@@ -1,16 +1,11 @@
 <?php
 
 $claims = [
-    'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, quod.',
     'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolorum eaque, magnam natus nemo pariatur.',
-    'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid iste molestias?',
-    'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci aliquam cumque deleniti eaque, harum inventore laboriosam libero minima nisi?'
 ];
 $headline = $claims[array_rand($claims)];
 
 $images = [
-    'teaser-1.jpg',
-    'teaser-2.jpg',
     'teaser-3.jpg'
 ];
 

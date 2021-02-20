@@ -3,7 +3,7 @@
 <!--        <div class="bg-image" style="background-image: url('./assets/homepage-header.jpg')"></div>-->
 <!--        <div class="image" style="background-image: url('./assets/OLI.png')"></div>-->
         <div class="video-wrapper">
-            <video>
+            <video controls="controls">
                 <source src="assets/homepage-video.mov" type="video/mp4">
                 Your browser does not support the video tag.
             </video>

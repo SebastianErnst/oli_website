@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+form {
+    display: flex;
+    flex: {
+        wrap: wrap;
+    }
+    margin: {
+        right: -$spaceSmall;
+        bottom: -$spaceSmall;
+        left: -$spaceSmall;
+    }
+    .button-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding: {
+            top: $spaceSmall;
+            right: $spaceSmall;
+            bottom: $spaceSmall;
+            left: $spaceSmall;
+        }
+    }
+    .input-wrapper {
+        padding: {
+            right: $spaceSmall;
+            bottom: $spaceSmall;
+            left: $spaceSmall;
+        }
+        width: 100%;
+        display: flex;
+        flex: {
+            direction: column;
+        }
+        justify-content: flex-start;
+        align-items: flex-start;
+        &.half {
+            width: 50%;
+        }
+        label {
+            order: 1;
+            margin: {
+                bottom: $spaceXSmall/2;
+            }
+        }
+        input,
+        textarea {
+            background: {
+                color: $beigeLight;
+            }
+            box-shadow: none;
+            font: {
+                family: $fontFamilyText;
+                size: $fontSizeNormal;
+            }
+            border: {
+                width: 0;
+                radius: $global-radius;
+            }
+            padding: $spaceXSmall;
+            max-width: 100%;
+            min-width: 100%;
+        }
+        button {
+            display: inline-block;
+        }
+        >* {
+            order: 2;
+        }
+    }
+}

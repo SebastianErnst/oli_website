@@ -2,8 +2,9 @@
 a,
 .anchor {
     text-decoration: none;
-    color: $fontLight;
+    color: $fontDark;
     transition: $anchorTransitionTimeAndEasingOut;
+    border-bottom: 1px solid $turquoiseDark;
     &:hover {
         transition: $anchorTransitionTimeAndEasingIn;
         color: $turquoiseDark;

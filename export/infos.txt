@@ -30,7 +30,7 @@ Module:
 	/- schriftart nur tahoma in verschiedenen größen
 	/- section dark etwas heller und weicher
 	/- max 3 schriftgrößen
-	- heading auf section green is weg
+	/- heading auf section green is weg
 
 	Testimonials:
 	/- referenzntext bisschen kleiner
@@ -49,8 +49,8 @@ Module:
 	/ - neue seite "Säulen" pro säu8le 1 section farblich unterschieden am ende den teaser, neue icons als hintergrundbild (nur zum test)
 	/- homepgae säulen linken auf neue säulenseite
 	/- säulen sollen neue, abgeschnittene icons haben (von oli bekommen), ohne bg image, alles tahoma (screenshot säulen)
-	- homepage pillars headings alle auf gleicher ebene
-	- gekürzte Säulentexte mit Spiegelstrichen
+	/- homepage pillars headings alle auf gleicher ebene
+	/- gekürzte Säulentexte mit Spiegelstrichen
 	
 	About:
 	/- über ex pain: text bissi aufhübschen mit modul, das abschnitte hervorhebt
@@ -58,18 +58,17 @@ Module:
 
 	Team:
 	/- Das Team: Oli/Ute untereinander portraitbild mit text 
-	- abgeänderter Vorstellungstexte
+	/- abgeänderter Vorstellungstexte
 
 	Teaser:
-	- Footer Bild. Das untere Drittel des Bildes wird verwendet
+	/- Footer Bild. Das untere Drittel des Bildes wird verwendet
 
 	Header:	
 	/- mixblendmode mit filter grescale 100% für hero header
 	/- schnupper training cta page head senfgelb
-	/- header call to action ins main menü
+	/- header call to action ins main menü	
+	/- 2 Header Bilder (einmal mehr und einmal weniger stark bearbeitet. Geschmackssache, muss man dann mal sehen 
 	- video nicht mittig und wirkt reingezoomt, bleibt immer 16:9 auf mobile wird der header einfach niedriger, Hintergrund Petrol	
-	- 2 Header Bilder (einmal mehr und einmal weniger stark bearbeitet. Geschmackssache, muss man dann mal sehen 
-
 	
 	CTA-Section:
 	/- CTA-Modul am Ende jeder Seite

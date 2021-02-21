@@ -1,10 +1,16 @@
 @charset "UTF-8";
 
 h1,
-h2 {
+h2,
+h3 {
     margin: {
         top: 0;
-        bottom: $spaceXSmall;
+        bottom: $spaceXSmallMobile;
+    }
+    @include breakpoint(large) {
+        margin: {
+            bottom: $spaceXSmall;
+        }
     }
 }
 
@@ -33,19 +39,30 @@ h2 {
         weight: 1000;
         family: $fontFamilyIntros;
     }
+    .section-green & {
+        color: $turquoiseLight;
+    }
 }
 
 h3 {
-    margin: {
-        top: 0;
-        bottom: $spaceXSmall;
-    }
+    position: relative;
     line-height: 1;
-    display: inline-block;
-    color: $fontLight;
+    display: block;
+    color: $turquoiseDark;
     font: {
-        family: $fontFamilyHeading;
-        weight: 500;
-        size: $fontSizeXLarge;
+        size: $fontSizeLarge;
+        weight: 1000;
+        family: $fontFamilyIntros;
+    }
+    margin: {
+        bottom: $spaceXSmallMobile/2;
+    }
+    @include breakpoint(large) {
+        margin: {
+            bottom: $spaceXSmall/2;
+        }
+    }
+    .section-green & {
+        color: $turquoiseLight;
     }
 }

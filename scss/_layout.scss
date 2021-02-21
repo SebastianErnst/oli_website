@@ -11,11 +11,16 @@ html {
     padding: 0;
     position: relative;
     font: {
-        size: 106.25%;
+        size: 100%;
         family: $fontFamilyText;
     }
     color: $fontLight;
     line-height: 1.4;
+    @include breakpoint(large) {
+        font: {
+            size: 106.25%;
+        }
+    }
 }
 
 .keymessage {
@@ -24,17 +29,22 @@ html {
         color: $fontLight;
     }
     max-width: 75%;
-    margin: {
-        left: auto;
-        right: auto;
-        top: 0;
-        bottom: $spaceSmall;
-    }
     color: $turquoiseDark;
     font: {
         size: $fontSizeXLarge;
         weight: 1000;
         family: $fontFamilyIntros;
+    }
+    margin: {
+        left: auto;
+        right: auto;
+        top: 0;
+        bottom: $spaceSmallMobile;
+    }
+    @include breakpoint(large) {
+        margin: {
+            bottom: $spaceSmall;
+        }
     }
 }
 
@@ -97,6 +107,7 @@ section {
 }
 
 blockquote {
+    display: inline-block;
     margin: {
         top: 0;
         right: 0;

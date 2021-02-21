@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 .main-menu {
-    z-index: 11111;
-    position: absolute;
+    position: r;
+    z-index: 10;
     top: 0;
     left: 0;
     right: 0;
@@ -12,6 +12,9 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    @include breakpoint(medium) {
+        position: absolute;
+    }
     ul {
         @include reset-list;
         display: flex;
@@ -19,11 +22,23 @@
         justify-content: flex-end;
         li {
             margin: {
-                right: $spaceSmall;
+                right: $spaceSmallMobile;
+            }
+            @include breakpoint(large) {
+                margin: {
+                    right: $spaceSmall;
+                }
             }
             &:last-child {
                 margin: {
                     right: 0;
+                }
+            }
+            a {
+                color: $fontLight;
+                border: 0;
+                &:hover {
+                    color: $turquoise;
                 }
             }
         }

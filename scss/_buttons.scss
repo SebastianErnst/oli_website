@@ -6,6 +6,7 @@ button {
     display: inline-flex;
     align-items: center;
     color: $fontLight;
+    cursor: pointer;
     &:link,
     &:visited,
     &:active {
@@ -30,10 +31,18 @@ button {
     position: relative;
     &.thin {
         padding: {
-            top: $spaceXSmall;
-            right: $spaceSmall;
-            left: $spaceSmall;
-            bottom: $spaceXSmall;
+            top: $spaceXSmallMobile;
+            right: $spaceSmallMobile;
+            left: $spaceSmallMobile;
+            bottom: $spaceXSmallMobile;
+        }
+        @include breakpoint(large) {
+            padding: {
+                top: $spaceXSmall;
+                right: $spaceSmall;
+                left: $spaceSmall;
+                bottom: $spaceXSmall;
+            }
         }
     }
     span {
@@ -44,6 +53,11 @@ button {
     .icon {
         margin: {
             right: $spaceXSmall;
+        }
+        @include breakpoint(large) {
+            margin: {
+                right: $spaceXSmallMobile;
+            }
         }
     }
     &::before {
@@ -74,7 +88,7 @@ button {
         }
         &::before {
             background: {
-                color: $turquoise;
+                color: $turquoiseDark;
             }
         }
         &:hover {

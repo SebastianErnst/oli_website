@@ -8,6 +8,11 @@
             margin: {
                 bottom: $spaceNormal;
             }
+            @include breakpoint(large) {
+                margin: {
+                    bottom: $spaceNormalMobile;
+                }
+            }
             &:last-child {
                 margin: {
                     bottom: 0;

@@ -4,7 +4,7 @@
     .background-image {
         @include absolute-stretch();
         background: {
-            position: 50% 50%;
+            position: 0 bottom;
             size: cover;
         }
         filter: grayscale(100%);
@@ -24,12 +24,16 @@
     .keymessage,
     .intro {
         position: relative;
-        //text-shadow: 2px 2px 1px rgba(black, 1);
     }
 
     .intro {
         margin: {
-            bottom: $spaceLarge;
+            bottom: $spaceLargeMobile;
+        }
+        @include breakpoint(large) {
+            margin: {
+                bottom: $spaceLarge;
+            }
         }
     }
 }

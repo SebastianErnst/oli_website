@@ -28,17 +28,24 @@ $fontFamilyIntros: 'Tahoma', sans-serif;
 $fontFamilyHeading: 'Tahoma', sans-serif;
 $fontFamilyText: 'Tahoma', sans-serif;
 
-$fontSizeNormal: 16px;
-$fontSizeLarge: 20px;
-$fontSizeXLarge: 30px;
+$fontSizeNormal: 100%;
+$fontSizeLarge: 125%;
+$fontSizeXLarge: 150%;
 
 $iconSizeNormal: 40px;
 $iconSizeLarge: 60px;
+
+$spaceXSmallMobile: 8px;
+$spaceSmallMobile: 15px;
+$spaceNormalMobile: 35px;
+$spaceLargeMobile: 50px;
+$spaceXLargeMobile: 75px;
 
 $spaceXSmall: 12px;
 $spaceSmall: 25px;
 $spaceNormal: 50px;
 $spaceLarge: 75px;
+$spaceXLarge: 125px;
 
 $fontDark: #000;
 $fontLight: #fff;
@@ -46,7 +53,7 @@ $fontLight: #fff;
 $breakpoints: (
     small: 0,
     medium: 468px,
-    large: 769px
+    large: 980px
 );
 
 $global-radius: 5px;

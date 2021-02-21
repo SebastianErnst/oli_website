@@ -10,14 +10,18 @@ class MainApplication {
         })
 
         $('.video-wrapper').on('click', () => {
-            let video = $('.video-wrapper').find('video')[0];
+            let $wrapper =  $('.video-wrapper'),
+                video = $wrapper.find('video')[0];
+
+            $wrapper.addClass('active');
             if (video.paused === true) {
                 video.play();
                 $('.video-trigger').hide();
-            } else {
-                video.pause();
-                $('.video-trigger').show();
             }
+            // else {
+            //     video.pause();
+            //     $('.video-trigger').show();
+            // }
         });
 
         $('[data-swiper-container]').each((index, element) => {

@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+
 define('ASSETS_PATH', './assets/' );
 define('DATA_PATH', './data/');
 define('TESTIMONIAL_MEDIA_PATH', ASSETS_PATH . 'testimonials/');
@@ -19,6 +21,9 @@ if (empty($pageName)) {
     getPage('homepage', 'Oliver Kroiss', 'homepage-header');
 } else {
     switch ($pageName) {
+        case 'mail':
+            getPage('mail');
+            break;
         case 'das-team':
             getPage('das-team', 'Das Team');
             break;
@@ -37,7 +42,7 @@ if (empty($pageName)) {
     }
 }
 
-function getPage($name, $headline, $header = 'header') {
+function getPage($name, $headline = '', $header = 'header') {
     require "./markup/common-header.php";
     require "./markup/main-menu.php";
     require "./markup/$header.php";

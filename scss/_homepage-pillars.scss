@@ -2,20 +2,34 @@
 
 .homepage-pillars-section {
     .pillars {
-        margin-bottom: rem-calc(20 + $spaceNormal);
+        margin-bottom: rem-calc(20 + $spaceNormalMobile);
+        @include breakpoint(large) {
+            margin-bottom: rem-calc(20 + $spaceNormal);
+        }
     }
+
     .pillars-list {
         @include reset-list;
         display: flex;
         flex: {
             wrap: wrap;
         }
-        margin: rem-calc(-10);
+        @include breakpoint(large) {
+            margin: rem-calc($spaceXSmall);
+        }
         .pillars-list-item {
-            width: 25%;
-            padding: rem-calc(10);
+                width: 100%;
+            @include breakpoint(medium) {
+                width: 50%;
+                padding: rem-calc($spaceXSmall);
+            }
+            @include breakpoint(large) {
+                width: 25%;
+                padding: rem-calc($spaceXSmall);
+            }
         }
     }
+
     .pillar {
         @include box-shadow();
         overflow: hidden;
@@ -24,40 +38,97 @@
         height: 100%;
         width: 100%;
         background: $turquoiseDark;
-        padding: $spaceSmall;
-        .sub-heading {
-            display: inline-block;
-            color: $fontLight;
-            margin: {
-                bottom: $spaceNormal;
+        padding: {
+            top: $spaceXLargeMobile;
+            right: $spaceSmallMobile;
+            bottom: $spaceSmallMobile;
+            left: $spaceSmallMobile;
+        }
+        @include breakpoint(large) {
+            padding: {
+                top: $spaceXLarge;
+                right: $spaceSmall;
+                bottom: $spaceSmall;
+                left: $spaceSmall;
             }
+        }
+        .sub-heading {
+            position: absolute;
+            display: block;
+            color: $fontLight;
             font: {
                 weight: bold;
                 style: italic;
+            }
+            top: $spaceSmallMobile;
+            left: $spaceSmallMobile;
+            right: $spaceSmallMobile;
+            @include breakpoint(large) {
+                top: $spaceSmall;
+                left: $spaceSmall;
+                right: $spaceSmall;
             }
         }
         .image {
             @include aspect-ratio(1, 1);
             height: auto;
-            width: calc(100% + #{$spaceSmall*6});
+
             background: {
                 size: cover;
                 position: 50% 50%;
             }
-            margin: {
-                bottom: $spaceSmall;
-                left: -$spaceSmall*3;
-                right: -$spaceSmall*3;
-            }
             opacity: 0.85;
+            width: calc(100% + #{$spaceSmallMobile*6});
+            margin: {
+                bottom: $spaceSmallMobile;
+                left: -$spaceSmallMobile*3;
+                right: -$spaceSmallMobile*3;
+            }
+            @include breakpoint(large) {
+                width: calc(100% + #{$spaceSmall*6});
+                margin: {
+                    bottom: $spaceSmall;
+                    left: -$spaceSmall*3;
+                    right: -$spaceSmall*3;
+                }
+            }
         }
         .h2 {
             color: $yellow;
         }
-        .text {
+        .info-list {
+            @include reset-list();
             font-size: $fontSizeNormal;
             color: rgba($fontLight, 0.95);
             margin: 0;
+            padding: {
+                left: $spaceSmall;
+            }
+            li {
+                position: relative;
+                margin: {
+                    bottom: $spaceSmallMobile/2;
+                }
+                @include breakpoint(large) {
+                    margin: {
+                        bottom: $spaceSmall/2;
+                    }
+                }
+                &:last-child {
+                    margin: {
+                        bottom: 0;
+                    }
+                }
+                &::before {
+                    position: absolute;
+                    top: 0;
+                    content: "\ea10";
+                    font: {
+                        family: 'icomoon';
+                    }
+                    left: -$spaceSmall;
+                }
+            }
         }
     }
 }

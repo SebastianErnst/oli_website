@@ -6,13 +6,22 @@
     }
     .swiper-slide {
         height: auto;
-        width: 90%;
         transition: opacity 0.5s;
+        width: 100%;
+        @include breakpoint(large) {
+            width: 90%;
+        }
         &.three-quarter {
-            width: 70%;
+            width: 85%;
+            @include breakpoint(large) {
+                width: 70%;
+            }
         }
         &.half {
-            width: 50%;
+            width: 65%;
+            @include breakpoint(large) {
+                width: 50%;
+            }
         }
         &.swiper-slide-prev,
         &.swiper-slide-next {
@@ -26,7 +35,6 @@
             color: $beigeLight;
         }
         color: $fontDark;
-        padding: $spaceNormal;
         display: flex;
         flex: {
             direction: column;
@@ -34,9 +42,18 @@
         justify-content: space-between;
         position: relative;
         overflow: hidden;
+        padding: $spaceNormalMobile;
+        @include breakpoint(large) {
+            padding: $spaceNormal;
+        }
         .top-content {
             margin: {
-                bottom: $spaceNormal;
+                bottom: $spaceNormalMobile;
+            }
+            @include breakpoint(large) {
+                margin: {
+                    bottom: $spaceNormal;
+                }
             }
             .rating-image-wrapper {
                 display: flex;
@@ -50,15 +67,17 @@
                 display: flex;
                 align-items: center;
                 margin: {
-                    bottom: $spaceSmall;
+                    bottom: $spaceSmallMobile;
+                }
+                @include breakpoint(large) {
+                    margin: {
+                        bottom: $spaceSmall;
+                    }
                 }
             }
             .image {
                 background: {
                     color: $turquoiseLight;
-                }
-                margin: {
-                    bottom: $spaceXSmall;
                 }
                 position: relative;
                 overflow: hidden;
@@ -71,6 +90,14 @@
                 height: 100px;
                 width: 100px;
                 transform: translateX(-50%);
+                margin: {
+                    bottom: $spaceXSmallMobile;
+                }
+                @include breakpoint(large) {
+                    margin: {
+                        bottom: $spaceXSmall;
+                    }
+                }
                 .icon {
                     @include absolute-center;
                     color: $turquoiseDark;
@@ -114,10 +141,16 @@
         color: $turquoiseLight;
     }
     .swiper-button-prev {
-        left: rem-calc(-40);
+        left: rem-calc(4);
+        @include breakpoint(large) {
+            left: rem-calc(-40);
+        }
     }
     .swiper-button-next {
-        right: rem-calc(-40);
+        right: rem-calc(4);
+        @include breakpoint(large) {
+            right: rem-calc(-40);
+        }
     }
     .swiper-pagination {
         bottom: rem-calc(-40);

@@ -97,15 +97,23 @@
         font: {
             size: $fontSizeXLarge;
         }
-        width: rem-calc(75);
-        height: rem-calc(75);
+        width: rem-calc(50);
+        height: rem-calc(50);
+        @include breakpoint(large) {
+            width: rem-calc(75);
+            height: rem-calc(75);
+        }
     }
     @if ($size == small) {
         font: {
             size: $fontSizeXLarge;
         }
-        width: rem-calc(60);
-        height: rem-calc(60);
+        width: rem-calc(40);
+        height: rem-calc(40);
+        @include breakpoint(large) {
+            width: rem-calc(60);
+            height: rem-calc(60);
+        }
     }
     &.icon-video-camera {
         &::before {

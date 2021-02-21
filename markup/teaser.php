@@ -6,7 +6,7 @@ $claims = [
 $headline = $claims[array_rand($claims)];
 
 $images = [
-    'teaser-3.jpg'
+    'teaser-1.jpg'
 ];
 
 $image = $images[array_rand($images)];

@@ -4,6 +4,28 @@
     box-sizing: border-box;
 }
 
+#fitogram-booking-tool {
+    z-index: 1;
+    position: relative;
+}
+
+.page-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(black, 0.75);
+    z-index: 9;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity $anchorTransitionTimeAndEasingOut;
+    &.active {
+        opacity: 1;
+        pointer-events: all;
+    }
+}
+
 body,
 html {
     height: 100%;
@@ -24,22 +46,14 @@ html {
 }
 
 .keymessage {
-    text-align: center;
     .section-green & {
         color: $fontLight;
     }
-    max-width: 75%;
     color: $turquoiseDark;
     font: {
         size: $fontSizeXLarge;
         weight: 1000;
         family: $fontFamilyIntros;
-    }
-    margin: {
-        left: auto;
-        right: auto;
-        top: 0;
-        bottom: $spaceSmallMobile;
     }
     @include breakpoint(large) {
         margin: {
@@ -71,6 +85,13 @@ section {
     }
     &:last-child {
         padding-bottom: 0;
+    }
+    .inner-wrapper {
+        > * {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
     &.additional-content {
         padding-bottom: $spaceNormal;

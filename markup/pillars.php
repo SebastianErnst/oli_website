@@ -28,7 +28,7 @@ Akademie
 EOF;
 
 $pillar3Text = <<<EOF
-Unter dieser Kategorie findest du eine Mediathek vor, mit von uns aufgenommenen Videos. Rund um die Themen allgemeine Gesundheit und Schmerzen gibt es theorieorientierte, aber auch praxisnahe Themen. Mit direkt anwendbaren Tipps unterstützt dich die Akademie dabei, deinen Horizont zu erweitern, deine Gesundheit zu verbessern und deine Schmerzen weiter zu lindern. Mindset und Praxis-Empfehlungen in einer Mediathek gebündelt.
+In dieser findest du eine Mediathek vor, mit von uns aufgenommenen Videos. Rund um die Themen allgemeine Gesundheit und Schmerzen gibt es theorieorientierte, aber auch praxisnahe Themen. Mit direkt anwendbaren Tipps unterstützt dich die Akademie dabei, deinen Horizont zu erweitern, deine Gesundheit zu verbessern und deine Schmerzen weiter zu lindern. Mindset und Praxis-Empfehlungen in einer Mediathek gebündelt.
 Wissen, das dich weiter bringt.
 EOF;
 
@@ -50,7 +50,30 @@ Die Gruppe wird von einem Coach geleitet und unterstützt dich auf deinem Weg
 EOF;
 
 ?>
-<section class="pillar-section additional-content">
+<section class="additional-content">
+    <div class="main-wrapper">
+        <div class="inner-wrapper">
+            <p class="keymessage">
+                Ex-Pain ist ein Trainings-System, das speziell dafür konzipiert ist, Rücken- oder Schulterschmerzen und
+                Nackenverspannungen zu mildern.
+            </p>
+            <p class="intro">
+                Es ist besonders zu empfehlen für Menschen, die im Alltag sehr <strong>viel sitzen</strong>.
+                Die Methoden von Ex-Pain sollten nicht nur als Training angesehen werden, sondern als selbstverständlicher
+                und notwendiger Begleiter im <strong>Alltag</strong>. Ein gesunder Rücken sollte Teil des Lifestyles sein.
+                So selbstverständlich wie Zähneputzen!
+                Mit Ex-Pain kannst du deine <strong>Schmerzen lindern</strong> oder der Entstehung neuer Probleme im Rücken vorbeugen.
+                Verschiedene Ansätze greifen ineinander, was Ex-Pain zu einem ganzheitlichen Trainingssystem macht, um dich
+                <strong>nachhaltig</strong> dabei zu unterstützen, deinen Alltag wieder unbeschwerter zu machen.
+                <br>
+                <br>
+                Diese Ansätze nennen wir die vier Säulen von Ex-Pain:
+            </p>
+
+        </div>
+    </div>
+</section>
+<section class="pillar-section section-dark additional-content">
     <div class="main-wrapper">
         <div class="image" style="background-image: url('<?php echo PILLAR_IMG_1; ?>')"></div>
         <div class="inner-wrapper">
@@ -59,7 +82,7 @@ EOF;
         </div>
     </div>
 </section>
-<section class="pillar-section section-dark additional-content">
+<section class="pillar-section additional-content">
     <div class="main-wrapper">
         <div class="image" style="background-image: url('<?php echo PILLAR_IMG_2; ?>')"></div>
         <div class="inner-wrapper">
@@ -68,7 +91,7 @@ EOF;
         </div>
     </div>
 </section>
-<section class="pillar-section additional-content">
+<section class="pillar-section section-dark additional-content">
     <div class="main-wrapper">
         <div class="image" style="background-image: url('<?php echo PILLAR_IMG_3; ?>')"></div>
         <div class="inner-wrapper">
@@ -77,7 +100,7 @@ EOF;
         </div>
     </div>
 </section>
-<section class="pillar-section section-dark additional-content">
+<section class="pillar-section additional-content">
     <div class="main-wrapper">
         <div class="image" style="background-image: url('<?php echo PILLAR_IMG_4; ?>')"></div>
         <div class="inner-wrapper">

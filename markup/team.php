@@ -1,7 +1,7 @@
 <section class="team-section additional-content">
     <div class="main-wrapper">
         <div class="inner-wrapper">
-            <h2>Oliver Kroiss</h2>
+            <h2>Oliver Kroiß</h2>
             <div class="team-member">
                 <img class="image" src="./assets/team/Oliver.jpg" alt="Oliver Kroiss">
                 <div class="content">
@@ -26,7 +26,7 @@
                         In meiner Freizeit gehe ich gern bei uns im Wald spazieren oder spiele Tennis. Dabei kann ich mich
                         so richtig auspowern, meinen Kopf freibekommen und die Jungs sehen. Ich bin ein sehr familiärer
                         Mensch und genieße es, mit meiner Familie und besten Freunden zusammen zu sein. Von ihnen bekomme
-                        ich oft gesagt, dass ich sehr optimistisch und gut gelaunt bin. Mit meinem Know-How und meiner
+                        ich oft gesagt, dass ich sehr optimistisch und gut gelaunt bin. Ich versuche immer, mit meinem Know-How und meiner
                         positiven Art, alles zu geben und euch dabei zu unterstützen, eure Schmerzen zu mildern, und euch
                         ein wertvolleres Leben zu ermöglichen. Ich freue mich auf jeden Einzelnen von Euch!
                     </p>
@@ -72,8 +72,8 @@
                     <blockquote>Das Leben (be-)leben</blockquote>
                     <p class="text">
                         – mit all seinen Facetten, aktiv leben mit allen Sinnen!
-                        Und dabei Deine Welt ein wenig schöner machen.
-                        Es ist mir eine Freude, Dich dabei zu unterstützen!
+                        Und dabei deine Welt ein wenig schöner machen.
+                        Es ist mir eine Freude, dich dabei zu unterstützen!
                     </p>
                 </div>
             </div>

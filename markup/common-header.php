@@ -6,7 +6,7 @@ $socialShareImage = '';
 ?>
 
 <!DOCTYPE html>
-<html>
+<html class="<?php  echo $templateClass; ?>">
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -35,3 +35,4 @@ $socialShareImage = '';
     <link rel="stylesheet" type="text/css" href="./build/main.css">
 </head>
 <body>
+    <div class="page-overlay"></div>

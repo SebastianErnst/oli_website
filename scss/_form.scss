@@ -10,16 +10,26 @@ form {
         bottom: -$spaceSmall;
         left: -$spaceSmall;
     }
+    .error-label {
+        color: #be0000;
+    }
     .button-wrapper {
         width: 100%;
         display: flex;
-        justify-content: flex-end;
+        justify-content: flex-start;
         padding: {
-            top: $spaceSmall;
             right: $spaceSmall;
-            bottom: $spaceSmall;
             left: $spaceSmall;
         }
+        @include breakpoint(medium) {
+            padding: {
+                top: $spaceSmall;
+                right: $spaceSmall;
+                bottom: $spaceSmall;
+                left: $spaceSmall;
+            }
+        }
+
     }
     .input-wrapper {
         padding: {
@@ -35,7 +45,9 @@ form {
         justify-content: flex-start;
         align-items: flex-start;
         &.half {
-            width: 50%;
+            @include breakpoint(large) {
+                width: 50%;
+            }
         }
         label {
             order: 1;
@@ -64,7 +76,7 @@ form {
         button {
             display: inline-block;
         }
-        >* {
+        > * {
             order: 2;
         }
     }

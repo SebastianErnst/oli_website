@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+.homepage {
+    h2 {
+        text-align: center;
+    }
+    .keymessage {
+        max-width: 75%;
+        text-align: center;
+        margin: {
+            left: auto;
+            right: auto;
+            top: 0;
+            bottom: $spaceSmallMobile;
+        }
+    }
+}

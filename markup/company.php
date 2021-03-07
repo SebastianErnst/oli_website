@@ -1,85 +1,58 @@
-<?php
-
-?>
-
-<section class="additional-content">
+<section class="company-section additional-content section-dark">
     <div class="main-wrapper">
         <div class="inner-wrapper">
             <p class="keymessage">
-                Ex-Pain ist ein Trainings-System, das speziell dafür konzipiert ist, Rücken- oder Schulterschmerzen und
-                Nackenverspannungen zu mildern.
+                Vielleicht hilft dir einer dieser Links weiter:
             </p>
-            <p class="intro">
-                Es ist besonders zu empfehlen für Menschen, die im Alltag sehr <strong>viel sitzen</strong>.
-                Die Methoden von Ex-Pain sollten nicht nur als Training angesehen werden, sondern als selbstverständlicher
-                und notwendiger Begleiter im <strong>Alltag</strong>. Ein gesunder Rücken sollte Teil des Lifestyle sein.
-                So selbstverständlich wie Zähneputzen!
-                Mit Ex-Pain kannst du deine <strong>Schmerzen lindern</strong> oder der Entstehung neuer Probleme im Rücken vorbeugen.
-                Verschiedene Ansätze greifen ineinander, was Ex-Pain zu einem ganzheitlichen Trainingssystem macht, um dich
-                <strong>nachhaltig</strong> dabei zu unterstützen, deinen Alltag wieder unbeschwerter zu machen.
-                <br>
-                <br>
-                Diese Ansätze nennen wir die vier Säulen von Ex-Pain:
-            </p>
+            <ul class="text-icon-list">
+                <li>
+                    <div class="icon-wrapper">
+                        <div class="icon" style="background-image: url('./assets/pillars/pillar-1.png')"></div>
+                    </div>
+                    <div class="text-wrapper">
 
+                        <p>
+                            <a href="./">Startseite</a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequatur cum neque
+                            officiis, provident quam quos sunt unde vitae voluptate! Architecto, autem cum delectus
+                            distinctio doloremque illo laudantium obcaecati quisquam rem, ullam, voluptates.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon-wrapper">
+                        <div class="icon" style="background-image: url('./assets/pillars/pillar-4.png')"></div>
+                    </div>
+                    <div class="text-wrapper">
+                        <p>
+                            <a href="./ueber-ex-pain">Über Ex-Pain</a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequatur cum neque
+                            officiis, provident quam quos sunt unde vitae voluptate! Architecto, autem cum delectus
+                            distinctio doloremque illo laudantium obcaecati quisquam rem, ullam, voluptates.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon-wrapper">
+                        <div class="icon" style="background-image: url('./assets/pillars/pillar-2.png')"></div>
+                    </div>
+                    <div class="text-wrapper">
+                        <p>
+                            <a href="./das-team">Das Team</a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eligendi eos esse expedita
+                            fuga ipsam laborum non quaerat quos tenetur.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon-wrapper">
+                        <div class="icon" style="background-image: url('./assets/pillars/pillar-3.png')"></div>
+                    </div>
+                    <div class="text-wrapper">
+                        <p>
+                            <a href="./kontakt">Kontakt</a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem blanditiis consequuntur enim error facilis, illo maxime nam nulla odit omnis optio sit tenetur voluptate! Aliquid, saepe, sed.
+                        </p>
+                    </div>
+                </li>
+
+            </ul>
         </div>
-    </div>
-</section>
-<section class="company-section additional-content section-dark">
-    <div class="inner-wrapper">
-
-        <ul class="text-icon-list">
-            <li>
-                <div class="icon-wrapper">
-                    <div class="icon" style="background-image: url('./assets/pillars/pillar-1.png')"></div>
-                </div>
-                <div class="text-wrapper">
-                    <p>
-                        Das Livetraining: Dieses Training bildet die Basis. Es findet jeden Tag zu verschiedenen,
-                        wählbaren, Terminen statt und dauert 20 Minuten. Du kannst also bis zu 5x pro Woche trainieren. Es
-                        handelt sich hier um ein Online-Gruppen-Training und wird von erfahrenen und motivierten Trainern
-                        angeleitet. Wir achten auf eine gesunde Ausführung der Übungen und geben dir Korrektur, wenn es
-                        nötig sein sollte. Mit nur nur 20 Minuten, ist das Live-Training super effizient und lässt sich
-                        wunderbar in deinen Alltag integrieren.
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div class="icon-wrapper">
-                    <div class="icon" style="background-image: url('./assets/pillars/pillar-2.png')"></div>
-                </div>
-                <div class="text-wrapper">
-                    <p>
-                        Das Video-Training: Die zweite Säule hält aufgezeichnete Trainings für dich bereit. So hast du die
-                        Möglichkeit, ganz flexibel - on demand - zu trainieren. Du kannst so auch die Live-Trainings
-                        wiederholen, die dir besonders gut getan haben.
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div class="icon-wrapper">
-                    <div class="icon" style="background-image: url('./assets/pillars/pillar-3.png')"></div>
-                </div>
-                <div class="text-wrapper">
-                    <p>
-                        Die Akademie:
-                        Für Tipps und Empfehlungen rund um die Themen Gesundheit und Schmerzlinderung stehen in Säule 3 zahlreiche Videos zur Verfügung.
-                        Durch die stetig wachsende Akademie kannst du ein besseres Verständnis für die Zusammenhänge zwischen Körper, Schmerz und Psyche (aber auch anderen) Themen bekommen. Allein das hilft schon häufig! Du findest in der Akademie aber auch weiterführende Tipps, die du gut in den Alltag integrieren kannst.
-                        Mindset und Praxis-Empfehlungen in einer Mediathek gebündelt.
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div class="icon-wrapper">
-                    <div class="icon" style="background-image: url('./assets/pillars/pillar-4.png')"></div>
-                </div>
-                <div class="text-wrapper">
-                    <p>
-                        Das Training zu innerer Stärke:
-                        In Säule 4 trainieren wir einen anderen Muskel, den Inneren-Stärke- Muskel. Er hilft dir, am Ball zu bleiben und gute Strategien zu entwickeln, wie du nicht nur deinen Rücken, sondern auch dein Selbst stärken kannst. In diesem Gruppencoaching geht es unter anderem um Stress, Schmerzen, Überzeugungen, Gewohnheiten und inneren Antrieb. Und natürlich darum, wie du hilfreiche Strategien entwickeln und in dein Leben integrieren kannst!
-                    </p>
-                </div>
-            </li>
-        </ul>
     </div>
 </section>

@@ -13,7 +13,7 @@ EOF;
 // Pillar 1 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 $pillars = [];
 $pillars[] = [
-    "intro" => 'Das Tolle ist, es passt eigentlich immer',
+    "intro" => 'Das Tolle ist, es passt eigent&shylich immer',
     "headline" => 'Live-Training',
     "subHeadline" => 'Das Tolle ist, es passt eigentlich immer',
     "text" => [
@@ -41,11 +41,11 @@ $pillars[] = [
 
 // Pillar 3 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 $pillars[] = [
-    "intro" => 'Oft fehlen wichtige Hintergrundinformationen',
+    "intro" => 'Oft fehlen wichtige Hintergrund&shy;informationen',
     "headline" => 'Akademie',
     "subHeadline" => 'Oft fehlen wichtige Hintergrundinformationen',
     "text" => [
-        'Experten-Wissen rund um das Thema Schmerzen und Gesundheit ',
+        'Experten-Wissen rund um die Themen Schmerzen und Gesundheit ',
         'Anwendbares Wissen auf dem aktuellsten Stand',
         'Grundlagen für einen langfristig gesunden Rücken und weniger Schmerzen allgemein'
     ],
@@ -59,6 +59,7 @@ $pillars[] = [
     "headline" => 'Innere Stärke',
     "subHeadline" => 'Gesunder Körper, gesunder Geist... ist klar, oder?',
     "text" => [
+        'Coaching',
         'Psychologische Grundlagen für einen gesunden Körper',
         'Lerne deinen "inneren-Stärke-Muskel" zu trainieren',
         'Alles geht besser ohne Schmerzen'
@@ -77,7 +78,7 @@ $pillars[] = [
                 <?php for ($i = 0; $i < count($pillars); $i++): ?>
                 <li class="pillars-list-item">
                     <div class="pillar">
-                        <span class="sub-heading"><?php echo $pillars[$i]['subHeadline']; ?></span>
+                        <span class="sub-heading"><?php echo htmlspecialchars($pillars[$i]['subHeadline']); ?></span>
                         <div class="image" style="background-image: url(<?php echo $pillars[$i]['image']; ?>)"></div>
                         <h3 class="h2"><?php echo $pillars[$i]['headline']; ?></h3>
                         <ul class="info-list">
@@ -90,7 +91,7 @@ $pillars[] = [
                 <?php endfor; ?>
             </ul>
         </div>
-        <a href="./saeulen" class="button">
+        <a href="./ueber-ex-pain" class="button">
             <span>
                 Mehr erfahren
             </span>

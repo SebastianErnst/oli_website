@@ -14,18 +14,15 @@
         flex: {
             wrap: wrap;
         }
-        @include breakpoint(large) {
-            margin: rem-calc($spaceXSmall);
-        }
+        margin: rem-calc(-$spaceXSmall);
         .pillars-list-item {
                 width: 100%;
+            padding: rem-calc($spaceXSmall);
             @include breakpoint(medium) {
                 width: 50%;
-                padding: rem-calc($spaceXSmall);
             }
             @include breakpoint(large) {
                 width: 25%;
-                padding: rem-calc($spaceXSmall);
             }
         }
     }
@@ -39,7 +36,7 @@
         width: 100%;
         background: $turquoiseDark;
         padding: {
-            top: $spaceXLargeMobile;
+            top: $spaceNormal;
             right: $spaceSmallMobile;
             bottom: $spaceSmallMobile;
             left: $spaceSmallMobile;
@@ -53,6 +50,7 @@
             }
         }
         .sub-heading {
+            hyphens: auto;
             position: absolute;
             display: block;
             color: $fontLight;
@@ -71,19 +69,14 @@
         }
         .image {
             @include aspect-ratio(1, 1);
+            width: 50%;
+            margin: $spaceXSmall auto;
             height: auto;
-
             background: {
                 size: cover;
                 position: 50% 50%;
             }
             opacity: 0.85;
-            width: calc(100% + #{$spaceSmallMobile*6});
-            margin: {
-                bottom: $spaceSmallMobile;
-                left: -$spaceSmallMobile*3;
-                right: -$spaceSmallMobile*3;
-            }
             @include breakpoint(large) {
                 width: calc(100% + #{$spaceSmall*6});
                 margin: {

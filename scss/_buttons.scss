@@ -46,6 +46,7 @@ button {
         }
     }
     span {
+        text-align: center;
         position: relative;
         z-index: 2;
         transition: color $anchorTransitionTimeAndEasingOut;
@@ -95,6 +96,35 @@ button {
             span {
                 color: $fontLight;
             }
+        }
+    }
+    &.tertiary {
+        background: {
+            color: $turquoiseDark;
+        }
+        &::before {
+            background: {
+                color: $yellow;
+            }
+        }
+        &:hover {
+            span {
+                color: $fontLight;
+            }
+        }
+    }
+    &.play {
+        @include icon($size: big, $backgroundColor: false);
+        padding: 0;
+        &::after {
+            position: relative;
+            z-index: 2;
+            content: "\ea1c";;
+            font: {
+                //size: $fontSizeXXLarge;
+                family: 'icomoon';
+            }
+            transform: translateX(2px);
         }
     }
 }

@@ -9,19 +9,24 @@ class MainApplication {
             $('[data-main-menu]').toggleClass('active');
         })
 
+        $('.burger').on('click', () => {
+            $('.burger').toggleClass('active');
+            $('.main-menu').toggleClass('active');
+            $('.page-overlay').toggleClass('active');
+        });
+
         $('.video-wrapper').on('click', () => {
             let $wrapper =  $('.video-wrapper'),
+                $videoThumbnail = $('[data-video-thumbnail]'),
                 video = $wrapper.find('video')[0];
 
             $wrapper.addClass('active');
+            $videoThumbnail.addClass('active');
             if (video.paused === true) {
                 video.play();
+                $videoThumbnail[0].pause();
                 $('.video-trigger').hide();
             }
-            // else {
-            //     video.pause();
-            //     $('.video-trigger').show();
-            // }
         });
 
         $('[data-swiper-container]').each((index, element) => {

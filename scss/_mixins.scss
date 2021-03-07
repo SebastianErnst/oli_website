@@ -84,14 +84,27 @@
     }
 }
 
-@mixin icon($size: normal) {
+@mixin icon($size: normal, $backgroundColor: $turquoiseDark) {
     color: $fontLight;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background: {
-        color: $turquoiseDark;
+    @if $backgroundColor != false {
+        background: {
+            color: $backgroundColor;
+        }
+    }
+    @if ($size == big) {
+        font: {
+            size: $fontSizeXXLarge;
+        }
+        width: rem-calc(65);
+        height: rem-calc(65);
+        @include breakpoint(large) {
+            width: rem-calc(90);
+            height: rem-calc(90);
+        }
     }
     @if ($size == normal) {
         font: {

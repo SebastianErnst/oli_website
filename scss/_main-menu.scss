@@ -1,26 +1,103 @@
 @charset "UTF-8";
 
-.main-menu {
-    position: r;
+.main-menu-wrapper {
+    $mobileMenuHeight: rem-calc(65);
+    position: relative;
     z-index: 10;
-    top: 0;
-    left: 0;
-    right: 0;
     width: 100%;
-    height: 85px;
-    background-color: rgba($bgColorDark, 0.4);
+    background-color: $turquoiseDark;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    @include breakpoint(medium) {
+    height: $mobileMenuHeight;
+    top: 0;
+    left: 0;
+    right: 0;
+    @include breakpoint(large) {
+        background-color: rgba($bgColorDark, 0.4);
         position: absolute;
+        height: 85px;
     }
-    ul {
-        @include reset-list;
+    .login-desktop {
+        display: none;
+        @include breakpoint (medium) {
+            display: block;
+        }
+    }
+    .logo {
+        transform: translateY(3px);
+        border: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 75px;
+        margin-right: auto !important;
+        @include breakpoint (medium) {
+            width: 150px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .burger {
+        padding: $spaceXSmall;
+        border-radius: $global-radius;
+        @include breakpoint(large) {
+            display: none;
+        }
+        &.active {
+            span {
+                &:nth-child(1) {
+                    top: 50%;
+                    transform: translateY(-50%) rotate(45deg);
+                }
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+                &:nth-child(3) {
+                    bottom: 50%;
+                    transform: translateY(50%) rotate(-45deg);
+                }
+            }
+        }
+        .burger-inner {
+            position: relative;
+            width: 24px;
+            height: 20px;
+        }
+        span {
+            transition:
+                    transform $anchorTransitionTimeAndEasingOut,
+                    top $anchorTransitionTimeAndEasingOut,
+                    bottom $anchorTransitionTimeAndEasingOut,
+                    opacity $anchorTransitionTimeAndEasingOut;
+            left: 0;
+            right: 0;
+            display: block;
+            position: absolute;
+            height: 4px;
+            background: $fontLight;
+            border-radius: $global-radius;
+            &:nth-child(1) {
+                top: 0;
+            }
+            &:nth-child(2) {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &:nth-child(3) {
+                bottom: 0;
+            }
+        }
+    }
+    .inner-wrapper {
+        max-width: unset;
+        margin: 0;
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        li {
+        > * {
             margin: {
                 right: $spaceSmallMobile;
             }
@@ -34,12 +111,62 @@
                     right: 0;
                 }
             }
+        }
+    }
+    .main-menu {
+        @include reset-list;
+        @include breakpoint(medium down) {
+            width: 100%;
+            background-color: $turquoiseDark;
+            padding: $spaceXSmall;
+            left: 0;
+            top: $mobileMenuHeight;
+            position: absolute;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex: {
+                direction: column;
+            }
+            transition: transform $anchorTransitionTimeAndEasingOut;
+            transform: translateX(-100%);
+            &.active {
+                transform: translateX(0);
+            }
+            li {
+                margin: {
+                    right: 0;
+                    bottom: $spaceXSmall;
+                }
+                font: {
+                    size: $fontSizeLarge;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        li {
+            @include breakpoint(large) {
+                margin: {
+                    right: $spaceSmall;
+                }
+            }
             a {
                 color: $fontLight;
                 border: 0;
                 &:hover {
                     color: $turquoise;
                 }
+            }
+        }
+        .login-mobile {
+            display: block;
+            @include breakpoint (medium) {
+                display: none;
             }
         }
     }

@@ -7,8 +7,6 @@
             position: 0 bottom;
             size: cover;
         }
-        filter: grayscale(100%);
-        mix-blend-mode: multiply;
         top: -$spaceNormal;
         bottom: -$spaceNormal;
         @include breakpoint(medium) {
@@ -21,11 +19,21 @@
         }
         opacity: 0.85;
     }
-    .keymessage,
-    .intro {
+    .keymessage {
+        font-size: $fontSizeXXLarge;
+        text-align: left;
+        margin: {
+            right: 0;
+            left: 0;
+            bottom: $spaceNormal;
+        }
         position: relative;
+        @include breakpoint(large) {
+            margin: {
+                bottom: $spaceXLarge;
+            }
+        }
     }
-
     .intro {
         margin: {
             bottom: $spaceLargeMobile;

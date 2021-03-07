@@ -1,38 +1,27 @@
 @charset "UTF-8";
 
 .team-section {
-    &:nth-child(even) {
-        .image {
-            order: 2;
-            margin: {
-                right: 0;
-                left: $spaceSmallMobile;
-                bottom: $spaceSmallMobile;
-            }
-            @include breakpoint(large) {
-                margin: {
-                    left: $spaceSmall;
-                    bottom: $spaceSmall;
-                }
-            }
-        }
-    }
     .team-member {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
+        flex: {
+            direction: column;
+        }
+        @include breakpoint(medium) {
 
+        }
         .image {
             flex: {
                 shrink: 0;
             }
             display: block;
-            width: 25%;
+            width: 50%;
             margin: {
-                right: $spaceSmallMobile;
-                bottom: $spaceSmallMobile;
+                bottom: $spaceSmall;
             }
             @include breakpoint(large) {
+                width: 25%;
                 margin: {
                     right: $spaceSmall;
                     bottom: $spaceSmall;
@@ -44,10 +33,11 @@
             }
         }
         .content {
-            max-width: 75%;
+            @include breakpoint(large) {
+                max-width: 75%;
+            }
         }
         .text {
-            text-align: justify;
             margin: {
                 bottom: $spaceSmall;
             }

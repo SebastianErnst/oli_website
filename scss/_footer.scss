@@ -11,24 +11,35 @@ footer {
         @include breakpoint(medium) {
             height: 75px;
         }
-        .copyright,
         .impressum {
-            @include breakpoint(small only) {
-                order: 1;
+            margin-right: $spaceXSmall;
+        }
+        @include breakpoint(small only) {
+            .flex-item {
+                &:nth-child(1) {
+                    order: 2;
+                }
+                &:nth-child(2) {
+                    order: 1;
+                    width: 100%;
+                }
+                &:nth-child(3) {
+                    order: 3;
+                }
             }
         }
         .social-media-list {
+            @include reset-list;
+            margin-right: auto;
+            display: flex;
             @include breakpoint(small only) {
-                min-width: 250px;
-                order: 0;
-                flex-grow: 1;
                 justify-content: center;
             }
-            padding: 0;
-            margin: 0;
-            list-style: none;
-            display: flex;
             li {
+                margin-right: $spaceXSmall;
+                &:last-child {
+                    margin-right: 0;
+                }
                 a {
                     background: none;
                 }

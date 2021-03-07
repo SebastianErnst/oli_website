@@ -27,22 +27,32 @@
            size: contain;
        }
        position: absolute;
-       width: 20%;
-       top: -$spaceNormal;
+       width: 100%;
+       top: -$spaceSmall;
        @include breakpoint(medium) {
            top: -$spaceLarge;
        }
        @include breakpoint(large) {
+           width: 20%;
            top: -$spaceNormal;
        }
    }
     .inner-wrapper {
         z-index: 2;
         position: relative;
-        padding: {
-            left: 12.5%;
-            right: 12.5%;
+        @include breakpoint(medium) {
+            padding: {
+                left: 6.25%;
+                right: 6.25%;
+            }
         }
+        @include breakpoint(large) {
+            padding: {
+                left: 12.5%;
+                right: 12.5%;
+            }
+        }
+
     }
 }
 

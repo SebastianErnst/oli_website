@@ -5,8 +5,6 @@
     }
     .image {
         @include aspect-ratio(4, 1);
-        filter: grayscale(100%);
-        mix-blend-mode: multiply;
         background: {
             size: cover;
             repeat: no-repeat;
@@ -22,7 +20,7 @@
         }
         @include breakpoint(large) {
             padding: {
-                bottom: $spaceNormal;
+                bottom: $spaceSmall;
             }
         }
     }

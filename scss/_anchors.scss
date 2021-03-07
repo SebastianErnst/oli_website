@@ -9,4 +9,10 @@ a,
         transition: $anchorTransitionTimeAndEasingIn;
         color: $turquoiseDark;
     }
+    &.light {
+        color: $fontLight;
+        &:hover {
+            color: $turquoiseDark;
+        }
+    }
 }

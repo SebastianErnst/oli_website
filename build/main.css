@@ -2,34 +2,14 @@
 @import "../node_modules/swiper/css/swiper.min.css";
 @import "../fonts/style.css";
 @font-face {
-  font-family: "Bitter";
-  font-style: regular;
-  font-weight: normal;
-  src: url("../fonts/Bitter-VariableFont_wght.ttf") format("truetype");
+  font-family: "Montserrat";
+  font-weight: 800;
+  src: url("../fonts/Montserrat-ExtraBold.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Balibong";
-  font-style: regular;
-  font-weight: normal;
-  src: url("../fonts/Balibong-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Cities Typeface";
-  font-style: regular;
-  font-weight: normal;
-  src: url("../fonts/Cities_Typeface.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Code Pro Demo";
-  font-style: regular;
-  font-weight: normal;
-  src: url("../fonts/Code Pro Demo.otf") format("truetype");
-}
-@font-face {
-  font-family: "Between";
-  font-style: regular;
-  font-weight: normal;
-  src: url("../fonts/sansbetween_regular.ttf") format("truetype");
+  font-family: "Montserrat";
+  font-weight: 400;
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
 }
 /**
  * Foundation for Sites
@@ -104,6 +84,15 @@ h3 {
   z-index: 1;
   position: relative;
 }
+#fitogram-booking-tool #fito-header {
+  display: none;
+}
+#fitogram-booking-tool .filters-container_26FPP {
+  display: none;
+}
+#fitogram-booking-tool #fito-footer {
+  display: none;
+}
 
 .page-overlay {
   position: fixed;
@@ -145,14 +134,10 @@ html {
   font-size: 150%;
   font-weight: 1000;
   font-family: "Tahoma", sans-serif;
+  margin-bottom: 25px;
 }
 .section-green .keymessage {
   color: #fff;
-}
-@media print, screen and (min-width: 61.25em) {
-  .keymessage {
-    margin-bottom: 25px;
-  }
 }
 
 .intro {
@@ -513,8 +498,9 @@ a.light:hover,
 }
 .homepage-header .header-content .cta-text {
   line-height: 0.85;
+  font-family: "Montserrat";
   font-size: 200%;
-  font-weight: 1000;
+  font-weight: 800;
   display: inline-block;
   padding: 12px 24px;
   border: 3px solid white;
@@ -535,6 +521,8 @@ a.light:hover,
 }
 .homepage-header .header-content .claim {
   font-size: 125%;
+  font-family: "Montserrat";
+  font-weight: 400;
   margin-bottom: 12px;
   display: none;
 }
@@ -543,6 +531,20 @@ a.light:hover,
     display: inline-block;
     font-size: 175%;
     margin-bottom: 25px;
+  }
+}
+.homepage-header .header-content .extra {
+  font-size: 125%;
+  font-family: "Montserrat";
+  font-weight: 400;
+  margin-top: 12px;
+  display: none;
+}
+@media print, screen and (min-width: 29.25em) {
+  .homepage-header .header-content .extra {
+    display: block;
+    font-size: 175%;
+    margin-top: 25px;
   }
 }
 
@@ -708,7 +710,7 @@ a.light:hover,
   left: 0;
   display: flex;
   align-items: flex-end;
-  padding-bottom: 35px;
+  padding-bottom: 12px;
 }
 @media print, screen and (min-width: 61.25em) {
   .header .inner-wrapper {
@@ -1179,6 +1181,11 @@ footer .footer .social-media-list li svg:hover {
   align-items: flex-start;
   flex-direction: column;
 }
+@media print, screen and (min-width: 61.25em) {
+  .team-section .team-member {
+    flex-direction: row;
+  }
+}
 .team-section .team-member .image {
   flex-shrink: 0;
   display: block;
@@ -1214,7 +1221,7 @@ footer .footer .social-media-list li svg:hover {
   right: 0;
   bottom: 0;
   left: 0;
-  background-position: 0 bottom;
+  background-position: 25% bottom;
   background-size: cover;
   top: -50px;
   bottom: -50px;
@@ -1222,6 +1229,7 @@ footer .footer .social-media-list li svg:hover {
 }
 @media print, screen and (min-width: 29.25em) {
   .teaser-section .background-image {
+    background-position: 0 bottom;
     top: -75px;
     bottom: -75px;
   }
@@ -1354,7 +1362,7 @@ form .input-wrapper {
   justify-content: flex-start;
   align-items: flex-start;
 }
-@media print, screen and (min-width: 61.25em) {
+@media print, screen and (min-width: 29.25em) {
   form .input-wrapper.half {
     width: 50%;
   }

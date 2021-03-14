@@ -8,8 +8,10 @@
         flex: {
             direction: column;
         }
-        @include breakpoint(medium) {
-
+        @include breakpoint(large) {
+            flex: {
+                direction: row;
+            }
         }
         .image {
             flex: {

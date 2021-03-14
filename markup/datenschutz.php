@@ -83,6 +83,8 @@
 
             </br></br>§9 Datenschutz
             </br>Bei der Beauftragung des Trainers überträgt der Klient diesem automatisch das Recht, alle relevanten personenbezogenen Daten über den Klienten zu speichern. Dies gilt zur Absicherung des Trainers insbesondere für alle, den Gesundheitszustand des Klienten betreffenden Daten. Der Trainer verpflichtet sich, diese Daten streng vertraulich zu behandeln und nicht an Dritte weiterzugeben. Ausnahmen sind Anweisungen höherer Instanzen.
+
+
         </div>
     </div>
 </section>

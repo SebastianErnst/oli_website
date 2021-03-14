@@ -68,8 +68,9 @@
         .cta-text {
             line-height: 0.85;
             font: {
+                family: 'Montserrat';
                 size: 200%;
-                weight: 1000;
+                weight: 800;
             }
             display: inline-block;
             padding: $spaceXSmall $spaceXSmall*2;
@@ -96,6 +97,8 @@
         .claim {
             font: {
                 size: $fontSizeLarge;
+                family: 'Montserrat';
+                weight: 400;
             }
             margin: {
                 bottom: $spaceXSmall;
@@ -108,6 +111,26 @@
                 }
                 margin: {
                     bottom: $spaceSmall;
+                }
+            }
+        }
+        .extra {
+            font: {
+                size: $fontSizeLarge;
+                family: 'Montserrat';
+                weight: 400;
+            }
+            margin: {
+                top: $spaceXSmall;
+            }
+            display: none;
+            @include breakpoint(medium) {
+                display: block;
+                font: {
+                    size: $fontSizeXXLarge;
+                }
+                margin: {
+                    top: $spaceSmall;
                 }
             }
         }

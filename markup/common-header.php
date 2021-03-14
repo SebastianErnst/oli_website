@@ -1,8 +1,10 @@
 <?php
-$author = 'OKMA - Oliver Kroiss Move Academy';
-$domain = '';
-$metaDescription = '';
-$socialShareImage = '';
+$domain = 'http://www.sebern.de/oliver_kroiss';
+$author = 'Online Training gegen Rückenschmerzen';
+$metaDescription = 'Flexibel & effizient trainieren.';
+$socialShareImage = 'social-share-image.png';
+
+$socialShareImage = DOMAIN.'/assets/social-share-image.png';
 ?>
 
 <!DOCTYPE html>
@@ -16,9 +18,9 @@ $socialShareImage = '';
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:domain" content="<?php echo $domain; ?>>">
     <meta name="twitter:title" content="<?php echo $author; ?>">
-    <meta name="twitter:text:description" content="<?php echo $metaDescription; ?>>">
+    <meta name="twitter:text:description" content="<?php echo $metaDescription; ?>">
     <meta name="twitter:description" content="<?php echo $metaDescription; ?>">
-    <meta name="twitter:image" content="<?php echo $socialShareImage; ?>>">
+    <meta name="twitter:image" content="<?php echo $socialShareImage; ?>">
 
     <meta property="og:title" content="<?php echo $author; ?>">
     <meta property="og:url" content="<?php echo $domain; ?>">

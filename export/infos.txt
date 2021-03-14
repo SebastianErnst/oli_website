@@ -32,7 +32,7 @@ Module:
 	+/- section dark etwas heller und weicher
 	+/- max 3 schriftgrößen
 	+/- heading auf section green is weg
-	- mobile
+	+/- mobile
 
 	Testimonials:
 	+/- referenzntext bisschen kleiner
@@ -75,9 +75,8 @@ Module:
 	+/- video nicht mittig und wirkt reingezoomt, bleibt immer 16:9 auf mobile wird der header einfach niedriger, Hintergrund Petrol	
 	+/- videothumbnail
 	+/- play button anpassen
-	- videothumbnail full width
-	- boxen selbst platzieren
-	- info button verschwindet bei hover auf mobile
+	+/- videothumbnail full width
+	+/- boxen selbst platzieren
 
 	Kontaktformular:
 	+/- routing nach Absenden anpassen, jede Seite ruft sich selber auf und geht durc
@@ -86,7 +85,7 @@ Module:
 	+/- Seiten anlegen 
 	+/- Texte einbinden
 	+/- im footer verlinken
-	- AGBs noch unter Impressum (is in drive bei datenschutz oder impressum)
+	+/- AGBs noch unter Impressum (is in drive bei datenschutz oder impressum)
 
 	CTA-Section:
 	+/- CTA-Modul am Ende jeder Seite
@@ -106,11 +105,26 @@ Module:
 	+/- thumbnail für homepage header
 	- favicon
 	+/- logo
-	- Social share Infos: Bild, text 
-	- social media accounts für footer
+	+/- Social share Infos: Bild, text 
+	+/- social media accounts für footer
 	+/- teaser section texte / bilder
 
 	Bugs:
 	+/- routing mit parametern oder mehr als 3 sectionen geht nit
 	+/- filter überall entfernen
 --------------------------------
+
+/- ipad quer team bild und text noch nebeneinander
+/- ipad hochkant kontakt half noch zweispaltig
+- testimonials mogile auto height
+/- mobile teaser bild position 25% bottom
+/- mobile keymessage margin nach unten
+/- mobile headerüberschrift soll mit schwarz unten abschließen
+/- homepage header font für VIELSITZER https://fonts.google.com/specimen/Montserrat?preview.text_type=custom Extra-bold 800  Regular 400 
+/- "Mehr Infos" homepage header auch regular 400
+Fitogramm anpassen:
+/- grüne lsite mit kurskalender /( tarire buchen / einloggen weg
+/- Alles unter inklusive Filter weg
+/- kompletter footer weg
+
+

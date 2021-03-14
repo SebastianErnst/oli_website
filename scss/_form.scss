@@ -45,7 +45,7 @@ form {
         justify-content: flex-start;
         align-items: flex-start;
         &.half {
-            @include breakpoint(large) {
+            @include breakpoint(medium) {
                 width: 50%;
             }
         }

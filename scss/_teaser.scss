@@ -4,12 +4,16 @@
     .background-image {
         @include absolute-stretch();
         background: {
-            position: 0 bottom;
+            position: 25% bottom;
             size: cover;
         }
         top: -$spaceNormal;
         bottom: -$spaceNormal;
+
         @include breakpoint(medium) {
+            background: {
+                position: 0 bottom;
+            }
             top: -$spaceLarge;
             bottom: -$spaceLarge;
         }

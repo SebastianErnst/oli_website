@@ -11,12 +11,15 @@
             </video>
             <div class="header-content">
                 <span class="cta-text">
-                    Vielsitzer?
+                    VIELSITZER?
                 </span>
                 <span class="claim">
                     Wir lindern deine Schmerzen.
                 </span>
                 <button class="play secondary"></button>
+                <span class="extra">
+                    Mehr Infos
+                </span>
             </div>
         </div>
     </div>

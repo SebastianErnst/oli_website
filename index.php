@@ -4,9 +4,9 @@ error_reporting(E_ALL);
 define('ENVIRONMENT', 'dev' );
 
 if (ENVIRONMENT === 'dev') {
-    define('DOMAIN', (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]/oli_website" );
+    define('DOMAIN', (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]/oliver_kroiss" );
 } else {
-    define('DOMAIN', (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]" );
+    define('DOMAIN', (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]/" );
 }
 
 define('ASSETS_PATH', './assets/' );

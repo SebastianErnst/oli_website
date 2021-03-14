@@ -7,6 +7,15 @@
 #fitogram-booking-tool {
     z-index: 1;
     position: relative;
+    #fito-header {
+        display: none;
+    }
+    .filters-container_26FPP {
+        display: none;
+    }
+    #fito-footer {
+        display: none;
+    }
 }
 
 .page-overlay {
@@ -55,10 +64,8 @@ html {
         weight: 1000;
         family: $fontFamilyIntros;
     }
-    @include breakpoint(large) {
-        margin: {
-            bottom: $spaceSmall;
-        }
+    margin: {
+        bottom: $spaceSmall;
     }
 }
 

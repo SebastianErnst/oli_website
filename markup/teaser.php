@@ -4,7 +4,7 @@
             <div class="background-image" style="background-image: url('<?php echo TEASER_MEDIA_PATH.'teaser-1.jpg'?>')"></div>
             <p class="keymessage">
                 Mache es, wie unsere Teilnehmer.</br>
-                Komme in das Ex-Pain Team und tue deinem Körper etwas gutes
+                Werde Teil der Ex-Pain Community und tue deinem Körper etwas gutes.
             </p>
             <a href="./infogespraech" class="button">
                 <span> Kostenloses </br> Info-Gespräch</span>

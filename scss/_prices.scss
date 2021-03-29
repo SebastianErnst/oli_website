@@ -1,0 +1,156 @@
+@charset "UTF-8";
+.section-prices {
+    background-color: $turquoiseLight;
+    .scroll-wrapper {
+        overflow-x: auto;
+    }
+    table {
+        width: 100%;
+        min-width: 850px;
+        border-collapse: collapse;
+        .small {
+            font: {
+                weight: 400;
+            }
+        }
+        tr {
+            &:last-child {
+                td {
+                    border-bottom: 0;
+                }
+            }
+            &.stripe {
+                td {
+                    border-bottom: 4px solid $fontDark;
+                }
+            }
+            &:nth-child(1) {
+                h2 {
+                    color: $fontLight;
+                    margin: 0;
+                }
+                td {
+                    border: 0;
+                    &:nth-child(2) {
+                        border-left: 1px solid $turquoise;
+                    }
+                    &:nth-child(3) {
+                        border-right: 1px solid $turquoise;
+                    }
+                    &:nth-child(2),
+                    &:nth-child(3) {
+                        background-color: $turquoise;
+                    }
+                    padding: $spaceSmall
+                }
+            }
+            &:nth-child(2) {
+                td {
+                    border-top: 0;
+                }
+            }
+            td {
+                border: 1px solid rgba($turquoise, 1);
+                padding: $spaceXSmall/2;
+                text-align: center;
+                @include breakpoint(large) {
+                    padding: $spaceXSmall;
+                }
+                &:nth-child(1) {
+                    border-left: 0;
+                    width: 20%;
+                    font: {
+                        weight: 800;
+                    }
+                }
+                &:nth-child(3) {
+                    border-right: 0;
+                }
+                &:nth-child(2),
+                &:nth-child(3) {
+                    width: 40%;
+                }
+                .outer {
+                    display: flex;
+                }
+            }
+        }
+    }
+    .icon {
+        display: inline-block;
+        position: relative;
+        height: rem-calc(40);
+        width: rem-calc(40);
+        &::before {
+            @include absolute-center();
+            color: $turquoiseDark;
+            content: "\ea10";
+            font: {
+                family: 'icomoon';
+                size: $fontSizeLarge;
+            }
+        }
+    }
+    .remove-padding {
+        padding: 0;
+    }
+    .outer {
+        width: 100%;
+        display: flex;
+        display: flex;
+        justify-content: space-around;
+        height: 80px;
+        .inner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: $spaceXSmall;
+            font: {
+                size: $fontSizeLarge;
+                weight: 800;
+            }
+            color: $fontLight;
+            &:nth-child(1) {
+                background-color: #295b59;
+            }
+            &:nth-child(2) {
+                background-color: $turquoise;
+            }
+            &:nth-child(3) {
+                background-color: #4fa9a4;
+            }
+        }
+    }
+    tr {
+        &:nth-last-child(2) {
+            td {
+                &:nth-child(2),
+                &:nth-child(3) {
+                    border-bottom: 0;
+                }
+            }
+        }
+        &:last-child {
+            td {
+                &:nth-child(2),
+                &:nth-child(3) {
+                    border-top: 0;
+                }
+            }
+        }
+    }
+    .prices {
+        td {
+            background-color: $yellow !important;
+            &:first-child {
+                background-color: transparent !important;
+            }
+        }
+        .inner {
+            background-color: $yellow !important;
+            text-shadow: 1px 1px 1px rgba($fontDark, 0.25);
+            font-size: $fontSizeXXLarge;
+        }
+    }
+}

@@ -13,8 +13,6 @@ use PHPMailer\PHPMailer\PHPMailer;
 
 $prevSite = $_POST['prev_site'];
 
-
-
 $formErrors = [];
 $inputEmptyMessage = 'Dieses Feld darf nicht leer sein.';
 $inputWrongEmailMessage ='Bitte geben Sie eine gültige E-Mailadresse an.';
@@ -46,9 +44,9 @@ if (count($formErrors) > 0) {
 }
 
 $mail = new PHPMailer();
-$mailhost = 'mx2fa3.netcup.net';
-$mailusername = 'info@sebern.de';
-$mailpassword = 'Ohnename123';
+$mailhost = 'w01a8744.kasserver.com';
+$mailusername = 'm059729b';
+$mailpassword = 'fegfgX5fpnLmMrB5';
 
 $mail->IsSMTP();
 $mail->Host = $mailhost;
@@ -61,11 +59,11 @@ $frommail = $email;
 $fromname = $name;
 $mail->SetFrom($frommail, $fromname);
 
-$address = "ernst.sebastian1991@gmail.com";
-$adrname = "Sebastian Ernst";
+$address = "oliver.kroiss@ex-pain.de";
+$adrname = "Oliver Kroiss";
 $mail->AddAddress($address, $adrname);
 
-$mail->Subject = "Kontaktanfrage";
+$mail->Subject = "Anfrage Textformular";
 $mail->Body = $message;
 
 if ($mail->Send() == false) {

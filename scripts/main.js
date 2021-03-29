@@ -1,9 +1,9 @@
 import $ from 'jquery';
 import Swiper from '../node_modules/swiper/js/swiper.min';
+import Foundation from '../node_modules/foundation-sites';
 
 class MainApplication {
     constructor() {
-        // $(document).foundation();
         $('[data-main-menu-trigger]').on('click', () => {
             $('[data-main-menu-trigger]').find('.hamburger-icon').toggleClass('active');
             $('[data-main-menu]').toggleClass('active');
@@ -29,9 +29,26 @@ class MainApplication {
             }
         });
 
+        this.initSliders();
+        $(window).on('changed.zf.mediaquery', () => {
+            this.initSliders();
+        });
+    }
+
+    initSliders() {
+        let SwiperExtraOptions = {};
+
+        if (Foundation.MediaQuery.is('small only')) {
+            console.log('klein!');
+            SwiperExtraOptions = {
+                autoHeight: true
+            }
+        }
+
         $('[data-swiper-container]').each((index, element) => {
             let $parent = $(element).parent();
             const testimonilSLider = new Swiper(element, {
+                ...SwiperExtraOptions,
                 speed: 500,
                 slidesPerView: 'auto',
                 centeredSlides: true,
@@ -45,10 +62,6 @@ class MainApplication {
                     nextEl: $parent.find('.swiper-button-next'),
                     prevEl: $parent.find('.swiper-button-prev')
                 }
-                // loop: true
-                // autoplay: {
-                //     delay: 5000,
-                // }
             });
 
             $parent.find('.swiper-slide-next').on('click', () => {

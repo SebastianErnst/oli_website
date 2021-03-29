@@ -43,7 +43,7 @@ $pillars[] = [
 $pillars[] = [
     "intro" => 'Oft fehlen wichtige Hintergrund&shy;informationen',
     "headline" => 'Akademie',
-    "subHeadline" => 'Oft fehlen wichtige Hintergrundinformationen',
+    "subHeadline" => 'Oft fehlt wichtiges Grundwissen',
     "text" => [
         'Experten-Wissen rund um die Themen Schmerzen und Gesundheit ',
         'Anwendbares Wissen auf dem aktuellsten Stand',

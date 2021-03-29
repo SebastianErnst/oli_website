@@ -54,7 +54,7 @@ Module:
 	+/- homepage pillars headings alle auf gleicher ebene
 	+/- gekürzte Säulentexte mit Spiegelstrichen
 	+/- homepage pillars schließen nicht links ab
-	- lange wörter in pillars brechen nicht um
+	+/- lange wörter in pillars brechen nicht um
 	
 	About:
 	+/- über ex pain: text bissi aufhübschen mit modul, das abschnitte hervorhebt
@@ -103,7 +103,7 @@ Module:
 
 	Brauchen wir noch:
 	+/- thumbnail für homepage header
-	- favicon
+	+/- favicon
 	+/- logo
 	+/- Social share Infos: Bild, text 
 	+/- social media accounts für footer
@@ -114,17 +114,20 @@ Module:
 	+/- filter überall entfernen
 --------------------------------
 
-/- ipad quer team bild und text noch nebeneinander
-/- ipad hochkant kontakt half noch zweispaltig
-- testimonials mogile auto height
-/- mobile teaser bild position 25% bottom
-/- mobile keymessage margin nach unten
-/- mobile headerüberschrift soll mit schwarz unten abschließen
-/- homepage header font für VIELSITZER https://fonts.google.com/specimen/Montserrat?preview.text_type=custom Extra-bold 800  Regular 400 
-/- "Mehr Infos" homepage header auch regular 400
+Mobiel Optimierung:
++/- ipad quer team bild und text noch nebeneinander
++/- ipad hochkant kontakt half noch zweispaltig
++/- testimonials mogile auto height
++/- mobile teaser bild position 25% bottom
++/- mobile keymessage margin nach unten
++/- mobile headerüberschrift soll mit schwarz unten abschließen
++/- homepage header font für VIELSITZER https://fonts.google.com/specimen/Montserrat?preview.text_type=custom Extra-bold 800  Regular 400 
++/- "Mehr Infos" homepage header auch regular 400
 Fitogramm anpassen:
-/- grüne lsite mit kurskalender /( tarire buchen / einloggen weg
-/- Alles unter inklusive Filter weg
-/- kompletter footer weg
++/- grüne lsite mit kurskalender /( tarire buchen / einloggen weg
++/- Alles unter inklusive Filter weg
++/- kompletter footer weg
+
+-seite springt mobile nach oben, wenn man menü öffnet
 
 

@@ -6,6 +6,7 @@
             <ul class="main-menu">
                 <li class=""><a href="./ueber-ex-pain">Über Ex-Pain</a></li>
                 <li class=""><a href="./das-team">Das Team</a></li>
+                <li class=""><a href="./preise">Preise</a></li>
                 <li class=""><a href="./kontakt">Kontakt</a></li>
                 <li class="login-mobile">
                     <a href="https://app.fitogram.pro/signin" target="_blank" class="button thin">

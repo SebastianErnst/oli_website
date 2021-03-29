@@ -1,9 +1,8 @@
 @charset "UTF-8";
 
 .main-menu-wrapper {
-    $mobileMenuHeight: rem-calc(65);
-    position: relative;
-    z-index: 10;
+    position: fixed;
+    z-index: 9999;
     width: 100%;
     background-color: $turquoiseDark;
     display: flex;
@@ -14,9 +13,7 @@
     left: 0;
     right: 0;
     @include breakpoint(large) {
-        background-color: rgba($bgColorDark, 0.4);
-        position: absolute;
-        height: 85px;
+        height: $menuHeight
     }
     .login-desktop {
         display: none;

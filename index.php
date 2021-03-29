@@ -52,6 +52,9 @@ if (empty($path)) {
         case 'das-team':
             getPage('das-team', 'Das Team');
             break;
+        case 'preise':
+            getPage('preise', 'Preise');
+            break;
         case 'kontakt':
             getPage('kontakt', 'Kontakt');
             break;

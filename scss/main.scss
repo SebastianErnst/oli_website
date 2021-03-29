@@ -3,6 +3,7 @@
 @import "fonts";
 @import "settings";
 @import "../node_modules/foundation-sites/scss/foundation";
+@include foundation-global-styles();
 @import "../node_modules/swiper/css/swiper.min.css";
 @import "mixins";
 @import "../fonts/style.css";
@@ -22,3 +23,5 @@
 @import "pillars";
 @import "form";
 @import "template-homepage";
+@import "prices";
+@import "icons";

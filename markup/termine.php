@@ -7,7 +7,7 @@
             <script>
                 Widget.default.config({
                     domain: 'oliver--mache-nur-online-training',
-                    loginTarget: 'list-view',
+                    loginTarget: 'appointments',
                     selector: '#fitogram-booking-tool'
                 });
                 Widget.default.calendar.new().render();

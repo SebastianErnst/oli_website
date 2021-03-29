@@ -115,6 +115,28 @@
             }
         }
         .extra {
+            position: relative;
+            &::before {
+                transform: rotate(-160deg);
+                transform-origin: top left;
+                position: absolute;
+                top: 25px;
+                left: calc(100% + 25px);
+                content: "";
+                display: block;
+                height: 80px;
+                width: 80px;
+                background: {
+                    image: url("../assets/arrow.png");
+                    size: contain;
+                    repeat: no-repeat;
+                }
+                @include breakpoint(large) {
+                    height: 100px;
+                    width: 100px;
+                    left: calc(100% + 50px);
+                }
+            }
             font: {
                 size: $fontSizeLarge;
                 family: 'Montserrat';

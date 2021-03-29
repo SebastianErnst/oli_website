@@ -10,7 +10,8 @@ a,
         color: $turquoiseDark;
     }
     &.light {
-        color: $fontLight;
+        color: rgba($fontLight, 0.5);
+        border-bottom: 0;
         &:hover {
             color: $turquoiseDark;
         }

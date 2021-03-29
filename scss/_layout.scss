@@ -7,6 +7,9 @@
 #fitogram-booking-tool {
     z-index: 1;
     position: relative;
+    [data-test-id="calendarview-filters-button"] {
+        display: none !important;
+    }
     #fito-header {
         display: none;
     }
@@ -50,6 +53,17 @@ html {
     @include breakpoint(large) {
         font: {
             size: 106.25%;
+        }
+    }
+}
+
+body {
+    padding: {
+        top: $mobileMenuHeight;
+    }
+    @include breakpoint(large) {
+        padding: {
+            top: $menuHeight;
         }
     }
 }

@@ -1,9 +1,7 @@
 @charset "UTF-8";
 
 .testimonials-section {
-    //@include breakpoint(small only) {
-    //    padding-bottom: $spaceLarge !important;
-    //}
+    overflow: hidden;
     .testimonials {
         position: relative;
     }

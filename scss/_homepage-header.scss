@@ -1,6 +1,11 @@
 @charset "UTF-8";
 
 .homepage-header {
+    h1 {
+        position: absolute;
+        left: -500px;
+        top: -500px;
+    }
     $transition: opacity 0.25s ease-out;
     overflow: hidden;
     max-width: 100%;

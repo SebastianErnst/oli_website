@@ -26,7 +26,17 @@
             }
         }
     }
-
+    .pillars-list-item {
+        &:nth-child(1) {
+            .pillar {
+                .image {
+                    .icon {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
     .pillar {
         @include box-shadow();
         overflow: hidden;
@@ -77,6 +87,7 @@
                 position: 50% 50%;
             }
             opacity: 0.85;
+            position: relative;
             @include breakpoint(large) {
                 width: calc(100% + #{$spaceSmall*6});
                 margin: {
@@ -84,6 +95,15 @@
                     left: -$spaceSmall*3;
                     right: -$spaceSmall*3;
                 }
+            }
+            .icon {
+                display: none;
+                color: $fontLight;
+                font-size: 250%;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translate(35px, -30px);
             }
         }
         .h2 {

@@ -1,9 +1,10 @@
 const path = require('path'),
     webpack = require('webpack');
 
+
 module.exports = {
-    mode: 'development',
-    watch: true,
+    mode: 'production',
+    // watch: true,
     recordsPath: path.resolve(__dirname, './records.json'),
     entry: {
         main: './scripts/main.js'

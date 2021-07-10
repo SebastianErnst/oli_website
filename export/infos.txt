@@ -128,6 +128,23 @@ Fitogramm anpassen:
 +/- Alles unter inklusive Filter weg
 +/- kompletter footer weg
 
--seite springt mobile nach oben, wenn man menü öffnet
+------
+
+
+Launch:
+
+/-vielleicht zoom/live icon in 1 säule auf startseite
+/-Bilder komprimieren - startseite große videos
+/-www und https Weiterleitung
+
+preise einfügen - fehlen noch
+POST LAUNCH: Sitemap
+GZIP aktivieren
+
+tabelle:
+Schwarzen strich noch unter Laufzeit
+call to action und teaser linken auf kontaktformular, kontakt aus dem menü ausblenden
+
+
 
 

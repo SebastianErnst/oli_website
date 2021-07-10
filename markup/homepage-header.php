@@ -1,4 +1,5 @@
 <header class="homepage-header">
+    <h1>Ex-Pain</h1>
     <div class="main-wrapper">
         <video data-video-thumbnail="" class="video-thumbnail" autoplay="autoplay" muted="muted" loop="loop">
             <source src="assets/homepage-video-thumbnail.mp4" type="video/mp4">

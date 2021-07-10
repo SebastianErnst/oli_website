@@ -46,9 +46,9 @@ if (empty($path)) {
         case 'mail':
             getPage('mail');
             break;
-        case 'infogespraech':
-            getPage('infogespraech', 'Info-Gespräch');
-            break;
+//        case 'infogespraech':
+//            getPage('infogespraech', 'Info-Gespräch');
+//            break;
         case 'das-team':
             getPage('das-team', 'Das Team');
             break;

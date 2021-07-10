@@ -41,7 +41,7 @@ $absolute_url = full_url( $_SERVER );
             <p class="keymessage">
                 Gerne kannst du mir auch eine E-Mail schreiben.
             </p>
-            <form action="#kontaktformular" method="post">
+            <form action="./kontakt" method="post">
                 <input type="hidden" name="prev_site" value="<?php echo $absolute_url;?>">
                 <div class="input-wrapper half">
                     <input type="text" name="name" id="name" value="<?php echo getValue('name'); ?>" required>

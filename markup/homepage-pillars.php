@@ -17,10 +17,10 @@ $pillars[] = [
     "headline" => 'Live-Training',
     "subHeadline" => 'Das Tolle ist, es passt eigentlich immer',
     "text" => [
+        'Online',
         '20 Minuten pro Training',
         'mit effizienten Methoden zu einem starken Rücken',
-        'Motivation durch Gruppendynamik',
-        'Teilnahme von Überall wo es Internet gibt '
+        'Motivation durch Gruppendynamik'
     ],
     "image" => PILLAR_IMG_1
 ];
@@ -79,7 +79,9 @@ $pillars[] = [
                 <li class="pillars-list-item">
                     <div class="pillar">
                         <span class="sub-heading"><?php echo htmlspecialchars($pillars[$i]['subHeadline']); ?></span>
-                        <div class="image" style="background-image: url(<?php echo $pillars[$i]['image']; ?>)"></div>
+                        <div class="image" style="background-image: url(<?php echo $pillars[$i]['image']; ?>)">
+                            <div class="icon icon-play"></div>
+                        </div>
                         <h3 class="h2"><?php echo $pillars[$i]['headline']; ?></h3>
                         <ul class="info-list">
                             <?php for ($j = 0; $j < count($pillars[$i]['text']); $j++): ?>

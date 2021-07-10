@@ -704,6 +704,11 @@ a.light:hover,
   justify-content: center;
   background-color: #1f5251;
 }
+.homepage-header h1 {
+  position: absolute;
+  left: -500px;
+  top: -500px;
+}
 .homepage-header .video-thumbnail {
   position: absolute;
   width: 100vw;
@@ -879,6 +884,9 @@ a.light:hover,
     width: 25%;
   }
 }
+.homepage-pillars-section .pillars-list-item:nth-child(1) .pillar .image .icon {
+  display: block;
+}
 .homepage-pillars-section .pillar {
   box-shadow: 5px 5px 15px -3px #1f5251;
   overflow: hidden;
@@ -926,6 +934,7 @@ a.light:hover,
   background-size: cover;
   background-position: 50% 50%;
   opacity: 0.85;
+  position: relative;
 }
 .homepage-pillars-section .pillar .image:before {
   display: block;
@@ -947,6 +956,15 @@ a.light:hover,
     margin-left: -75px;
     margin-right: -75px;
   }
+}
+.homepage-pillars-section .pillar .image .icon {
+  display: none;
+  color: #fff;
+  font-size: 250%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(35px, -30px);
 }
 .homepage-pillars-section .pillar .h2 {
   color: #ddaf1f;
@@ -1693,23 +1711,6 @@ form .input-wrapper > * {
 .section-prices table tr.stripe td {
   border-bottom: 4px solid #000;
 }
-.section-prices table tr:nth-child(1) h2 {
-  color: #fff;
-  margin: 0;
-}
-.section-prices table tr:nth-child(1) td {
-  border: 0;
-  padding: 25px;
-}
-.section-prices table tr:nth-child(1) td:nth-child(2) {
-  border-left: 1px solid #3c807c;
-}
-.section-prices table tr:nth-child(1) td:nth-child(3) {
-  border-right: 1px solid #3c807c;
-}
-.section-prices table tr:nth-child(1) td:nth-child(2), .section-prices table tr:nth-child(1) td:nth-child(3) {
-  background-color: #3c807c;
-}
 .section-prices table tr:nth-child(2) td {
   border-top: 0;
 }
@@ -1773,17 +1774,17 @@ form .input-wrapper > * {
   font-weight: 800;
   color: #fff;
 }
-.section-prices .outer .inner:nth-child(1) {
+.section-prices .outer .inner.colored:nth-child(1) {
   background-color: #295b59;
 }
-.section-prices .outer .inner:nth-child(2) {
+.section-prices .outer .inner.colored:nth-child(2) {
   background-color: #3c807c;
 }
-.section-prices .outer .inner:nth-child(3) {
+.section-prices .outer .inner.colored:nth-child(3) {
   background-color: #4fa9a4;
 }
-.section-prices tr:nth-last-child(2) td:nth-child(2), .section-prices tr:nth-last-child(2) td:nth-child(3) {
-  border-bottom: 0;
+.section-prices tr:first-child td {
+  border-top: 0;
 }
 .section-prices tr:last-child td:nth-child(2), .section-prices tr:last-child td:nth-child(3) {
   border-top: 0;

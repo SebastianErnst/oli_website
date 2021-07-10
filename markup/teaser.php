@@ -6,7 +6,7 @@
                 Mache es, wie unsere Teilnehmer.</br>
                 Werde Teil der Ex-Pain Community und tue deinem Körper etwas gutes.
             </p>
-            <a href="./infogespraech" class="button">
+            <a href="./kontakt" class="button">
                 <span> Kostenloses </br> Info-Gespräch</span>
             </a>
         </div>

@@ -1,5 +1,5 @@
 <?php
-$domain = 'http://www.sebern.de/oliver_kroiss';
+$domain = 'https://ex-pain.de';
 $author = 'Online Training gegen Rückenschmerzen';
 $metaDescription = 'Flexibel & effizient trainieren.';
 $socialShareImage = 'social-share-image.png';
@@ -8,7 +8,7 @@ $socialShareImage = DOMAIN.'/assets/social-share-image.png';
 ?>
 
 <!DOCTYPE html>
-<html class="<?php  echo $templateClass; ?>">
+<html class="<?php  echo $templateClass; ?>" lang="de">
 <head>
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">

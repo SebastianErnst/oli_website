@@ -2,6 +2,13 @@
 <project version="4">
   <component name="PublishConfigData" autoUpload="Always" serverName="Sebern" autoUploadExternalChanges="true">
     <serverData>
+      <paths name="Oliver Kroiss">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/ex-pain.de" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="Sebern">
         <serverdata>
           <mappings>

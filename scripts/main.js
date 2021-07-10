@@ -9,7 +9,8 @@ class MainApplication {
             $('[data-main-menu]').toggleClass('active');
         })
 
-        $('.burger').on('click', () => {
+        $('.burger').on('click', (event) => {
+            event.preventDefault();
             $('.burger').toggleClass('active');
             $('.main-menu').toggleClass('active');
             $('.page-overlay').toggleClass('active');
@@ -36,10 +37,10 @@ class MainApplication {
     }
 
     initSliders() {
+
         let SwiperExtraOptions = {};
 
         if (Foundation.MediaQuery.is('small only')) {
-            console.log('klein!');
             SwiperExtraOptions = {
                 autoHeight: true
             }

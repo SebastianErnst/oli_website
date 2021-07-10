@@ -1,11 +1,37 @@
 {
   "modules": {
-    "byIdentifier": {},
-    "usedIds": {}
+    "byIdentifier": {
+      "node_modules/expose-loader/index.js?jQuery!node_modules/expose-loader/index.js?$!node_modules/jquery/dist/jquery.js": 0,
+      "node_modules/webpack/buildin/global.js": 1,
+      "node_modules/swiper/js/swiper.min.js": 2,
+      "node_modules/expose-loader/index.js?$!node_modules/jquery/dist/jquery.js": 3,
+      "node_modules/jquery/dist/jquery.js": 4,
+      "scripts/main.js 387b3c0ee3781792405853d07fda291a": 5
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5
+    }
   },
   "chunks": {
-    "byName": {},
-    "bySource": {},
-    "usedIds": []
+    "byName": {
+      "main": 0,
+      "runtime": 1,
+      "vendor": 2
+    },
+    "bySource": {
+      "2 main": 0,
+      "0 main": 1,
+      "1 main": 2
+    },
+    "usedIds": [
+      0,
+      1,
+      2
+    ]
   }
 }

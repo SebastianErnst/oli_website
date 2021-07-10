@@ -50,27 +50,36 @@ $mailpassword = 'fegfgX5fpnLmMrB5';
 
 $mail->IsSMTP();
 $mail->Host = $mailhost;
-$mail->SMTPDebug = 1; // Kann man zu debug Zwecken aktivieren
+//$mail->SMTPDebug = 1; // Kann man zu debug Zwecken aktivieren
 $mail->SMTPAuth = true;
 $mail->Username = $mailusername;
 $mail->Password = $mailpassword;
 
-$frommail = $email;
-$fromname = $name;
+$frommail = "oliver.kroiss@ex-pain.de";
+$fromname = "Kontaktanfrage";
 $mail->SetFrom($frommail, $fromname);
 
 $address = "oliver.kroiss@ex-pain.de";
-$adrname = "Oliver Kroiss";
+$adrname = "Kontaktanfrage";
 $mail->AddAddress($address, $adrname);
 
 $mail->Subject = "Anfrage Textformular";
-$mail->Body = $message;
 
-if ($mail->Send() == false) {
-    echo "Mailer Error: " . $mail->ErrorInfo;
-} else {
-    echo "Message sent!";
-}
+$output = <<<EOF
+E-Mail: $email
+Name: $name
+Nachricht: $message
+EOF;
+
+$mail->Body = $output;
+
+//if ($mail->Send() == false) {
+//    echo "Mailer Error: " . $mail->ErrorInfo;
+//} else {
+//    echo "Message sent!";
+//}
+
+$mail->Send();
 
 header('Location: '.DOMAIN.'/kontaktbestaetigung');
 ?>
